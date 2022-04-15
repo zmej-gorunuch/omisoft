@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Modernist;
+    src: url('../fonts/Sk-Modernist-Regular.e68f85ab30926114d85000538a0ee790.otf')
+}
+
+@font-face {
+    font-family: Sk-Modernist;
+    src: url('../fonts/Sk-Modernist-Regular.e68f85ab30926114d85000538a0ee790.otf')
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// font-family: 'Montserrat', sans-serif;
+
+body {
+
+
+    &.bodyblack {
+        background: #000;
+    }
+}
+
+.service-container {
+    max-width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin: 0 auto;
+}
+
+.serviserow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.service__col-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
+.service-container {
+    position: relative;
+    z-index: 2;
+}
+
+.section-subtitle {
+    background: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 32px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+}
+

@@ -1,0 +1,535 @@
+.page-template-page-services{
+	background-color: #E7EAEC;
+}
+.page-template-page-services .styles_header_container__3E9tV{
+	box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
+}
+.page-template-page-services .styles_header_container__3E9tV,
+.page-template-page-services .styles_footer_container__2oeRF,
+.page-template-page-services .styles_footer_cellar__Strnz{
+	background-color: #fff;
+}
+
+
+/* Button */
+.omis-button{
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 130%;
+	letter-spacing: 0.05em;
+	padding: 14px 32px;
+	box-sizing: border-box;
+	background-color: #0F0F10;
+	color: #fff;
+	display: inline-block;
+	transition: all ease-in-out 0.2s;
+}
+.omis-button:hover{
+	transition: all ease-in-out 0.2s;
+	opacity: 0.8;
+	color: #fff;
+}
+.omis-button-green{
+	background-color: #C9FA3D;
+	color: #000000;
+}
+.omis-button-green:hover{
+	color: #000000;
+}
+/* end Button */
+
+/* Container */
+.omis-container{
+	max-width: 1160px;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 15px;	
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+/* end Container */
+
+
+
+/* Hero */
+.omis-hero{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: calc(100vh - 72px);
+	padding: 100px 0;
+}
+.omis-hero-ico{
+	margin: 0 auto 56px auto;
+	width: 88px;
+	height: 88px;
+	border-radius: 100%;
+	background-color: #fff;
+	box-shadow: 0px -2px 20px rgba(25, 26, 29, 0.02), 0px 2px 20px rgba(25, 26, 29, 0.02), 0px 0px 4px rgba(25, 26, 29, 0.02);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.omis-hero-title{
+	font-size: 96px;
+	line-height: 120%;
+	color: #0F0F10;
+	margin-bottom: 32px;
+	font-family: 'Montserrat';
+}
+.omis-hero-description{
+	max-width: 745px;
+	margin: 0 auto 56px auto;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	font-family: 'Montserrat';
+}
+@media (max-width: 1200px){
+	.omis-hero-title{
+		font-size: 76px;
+	}
+	.omis-hero-description{
+		max-width: 670px;
+		font-size: 22px;
+	}
+}
+@media (max-width: 991px){
+	.omis-hero-title{
+		font-size: 56px;
+		margin-bottom: 20px;
+	}
+	.omis-hero-description{
+		max-width: 620px;
+		font-size: 20px;
+		line-height: 1.6;
+		margin: 0 auto 35px auto;
+	}
+	.omis-hero-ico{
+		margin: 0 auto 35px auto;
+	}
+}
+@media (max-width: 768px){
+	.omis-hero-title{
+		font-size: 46px;
+	}
+	.omis-hero-description{
+		font-size: 18px;
+	}
+	.omis-hero-description{
+		max-width: 90%;
+	}
+}
+@media (max-width: 576px){}
+@media (max-width: 450px){
+	.omis-hero-title{
+		font-size: 40px;
+		line-height: 110%;
+		font-weight: normal;
+		margin-bottom: 16px;
+	}
+	.omis-hero-ico{
+		width: 72px;
+		height: 72px;
+		margin: 0 auto 32px auto;
+	}
+	.omis-hero-description{
+		max-width: 100%;
+		font-size: 16px;
+		line-height: 130%;
+		margin-bottom: 32px;
+	}
+	.omis-hero-content .omis-button{
+		max-width: 100%;
+		width: 100%;
+	}
+}
+/* end Hero */
+
+
+/* About */
+.omis-about{
+	padding-bottom: 136px;
+}
+.omis-row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -8px;
+	margin-right: -8px;
+	margin-bottom: -16px;
+	box-sizing: border-box;
+}
+.omis-col{
+	padding-left: 8px;
+	padding-right: 8px;
+	box-sizing: border-box;
+}
+.omis-col._col_33{
+	width: 33.3333%;
+}
+.omis-col._col_100{
+	width: 100%;
+}
+.omis-col._col_25{
+	width: 25%;
+}
+.omis-col-box{
+	margin-bottom: 16px;
+	height: calc(100% - 16px);
+	background-color: #fff;
+}
+.omis-about-advantage{
+	padding: 32px 24px 32px 24px;
+	text-align: center;
+}
+.omis-about-advantage-ico{
+	max-height: 40px;
+	height: 40px;
+	margin-bottom: 14px;
+}
+.omis-about-advantage-ico img{
+	max-height: 40px;
+}
+.omis-about-advantage-text{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 135%;
+}
+.omis-about-info{
+	padding: 80px 95px 96px 95px;
+}
+.omis-about-info-header{
+	max-width: 556px;
+	margin-bottom: 56px;
+}
+.omis-about-info-header h2{
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 135%;
+	margin: 0;
+}
+.omis-about-info-content{
+	padding-left: 286px;
+}
+.omis-about-info-content-box{}
+.omis-about-info-content-box:not(:last-child){
+	margin-bottom: 24px;
+}
+.omis-about-info-content-box h4{
+	margin-bottom: 8px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 135%;
+}
+.omis-about-info-content-box p{
+	font-size: 20px;
+	line-height: 160%;
+}
+.omis-about-info-content-box ol{
+	padding-left: 20px;
+}
+.omis-about-info-content-box ol li{
+	font-size: 20px;
+	line-height: 160%;
+}
+.omis-about-process{
+	padding: 48px;
+	box-sizing: border-box;
+}
+.omis-about-process-header{
+	margin-bottom: 36px;
+}
+.omis-about-process-header h2{
+	margin-bottom: 8px;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 135%;
+}
+.omis-about-process-header h2:last-child{
+	margin-bottom: 0;
+}
+.omis-about-process-header p{
+	max-width: 699px;
+	font-size: 24px;
+	line-height: 160%;
+	color: #0F0F10;
+	opacity: 0.7;
+}
+.omis-about-process-content{}
+.omis-about-process-content-title{
+	margin-bottom: 24px;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 160%;
+}
+.omis-about-process-box{
+	border: 1px solid #0F0F10;
+	padding: 24px;
+	box-sizing: border-box;
+	height: calc(100% - 16px);
+	margin-bottom: 16px;
+}
+.omis-about-process-box-num{
+	margin-bottom: 10px;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 160%;
+	font-family: 'Montserrat';
+}
+.omis-about-process-box-text{}
+.omis-about-process-box-text h5{
+	margin-bottom: 4px;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 160%;
+}
+.omis-about-process-box-text p{
+	font-size: 22px;
+	line-height: 160%;
+}
+@media (max-width: 1200px){
+	.omis-about-info-content-box h4,
+	.omis-about-advantage-text,
+	.omis-about-process-header p,
+	.omis-about-process-box-text h5{
+		font-size: 20px;
+	}
+	.omis-about-info-content-box ol li,
+	.omis-about-info-content-box p,
+	.omis-about-process-box-text p{
+		font-size: 18px;
+	}
+	.omis-about-info-header h2,
+	.omis-about-process-header h2{
+		font-size: 36px;
+	}
+	.omis-about-info-header h2 br{
+		display: none;
+	}
+}
+@media (max-width: 991px){
+	.omis-about-info-content{
+		padding-left: 0;
+	}
+	.omis-about-info,
+	.omis-about-process{
+		padding: 45px;
+	}
+}
+@media (max-width: 768px){
+	.omis-col._col_33{
+		width: 100%;
+	}
+	.omis-about-advantage{
+		display: flex;
+		text-align: left;
+		align-items: center;
+	}
+	.omis-about-advantage-ico{
+		width: 40px;
+		text-align: center;
+		margin-right: 16px;
+		margin-bottom: 0;
+	}
+	.omis-about-advantage-text{
+		flex: 1;
+	}
+	.omis-about-advantage-text br{
+		display: none;
+	}
+}
+@media (max-width: 576px){
+	.omis-about{
+		padding-bottom: 56px;
+	}
+	.omis-about-advantage-ico img{
+		max-height: 24px;
+	}
+	.omis-about-advantage-ico{
+		min-height: 24px;
+		height: 24px;
+		width: 24px;
+	}
+	.omis-about-info,
+	.omis-about-advantage,
+	.omis-about-process{
+		padding: 24px 16px;
+	}
+	.omis-about-info-header{
+		margin-bottom: 24px;
+	}
+	.omis-about-info-content-box ol li,
+	.omis-about-info-content-box p,
+	.omis-about-info-content-box h4,
+	.omis-about-advantage-text,
+	.omis-about-process-header p,
+	.omis-about-process-box-text p,
+	.omis-about-process-box-text h5,
+	.omis-about-process-content-title{
+		font-size: 16px;
+	}
+	.omis-about-process-header h2,
+	.omis-about-info-header h2,
+	.omis-about-process-box-num{
+		font-size: 24px;
+	}
+	.omis-about-process-header{
+		margin-bottom: 32px;
+	}
+}
+@media (max-width: 450px){}
+/* end About */
+
+/* Related */
+.omis-related{
+	background-color: #0F0F10;
+	color: #fff;
+	padding-top: 88px;
+	padding-bottom: 112px;
+}
+.omis-related-header{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.omis-related-header h2{
+	margin: 0;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 135%;
+}
+.omis-related-box{
+	height: calc(100% - 16px);
+	margin-bottom: 16px;
+	padding: 24px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	color: #0F0F10;
+}
+.omis-related-box-ico{
+	width: 48px;
+	height: 48px;
+	min-height: 48px;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	background-color: #fff;
+	box-shadow: 0px -2px 20px rgba(25, 26, 29, 0.02), 0px 2px 20px rgba(25, 26, 29, 0.06), 0px 0px 4px rgba(25, 26, 29, 0.05);
+	margin-bottom: 24px;
+}
+.omis-related-box-ico img{
+	max-width: 22px;
+}
+.omis-related-box-content{
+	flex: 1;
+	margin-bottom: 64px;
+}
+.omis-related-box-title{
+	margin-bottom: 8px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 135%;
+}
+.omis-related-box-text{
+	font-size: 16px;
+	line-height: 130%;
+}
+.omis-related-box-footer{}
+.omis-related-box-footer a{
+	display: inline-flex;
+	align-items: center;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 147%;
+}
+.omis-related-box-footer a i{
+	margin-left: 3px;
+    position: relative;
+    top: 2px;
+}
+.omis-related-offer{
+	text-align: center;
+	padding-top: 96px;
+}
+.omis-related-offer-subtitle{
+	margin-bottom: 24px;
+	font-size: 20px;
+	line-height: 147%;
+	letter-spacing: 0.05em;
+	opacity: 0.6;
+}
+.omis-related-offer-title{
+	margin-bottom: 40px;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 135%;
+}
+@media (max-width: 1200px){
+	.omis-related-offer-title,
+	.omis-related-header h2{
+		font-size: 42px;
+	}
+}
+@media (max-width: 991px){
+	.omis-col._col_25{
+		width: 50%;
+	}
+}
+@media (max-width: 768px){
+	.omis-related-offer-title,
+	.omis-related-header h2{
+		font-size: 36px;
+	}
+	.omis-related-offer-subtitle{
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
+}
+@media (max-width: 576px){
+	.omis-related {
+		overflow: hidden;
+	}
+	.omis-related .omis-row{
+		overflow-x: auto;
+		flex-wrap: nowrap;
+		width: calc(100% + 25px);
+	}
+	.omis-related .omis-row .omis-col._col_25{
+		width: 288px;
+		min-width: 288px;
+	}
+	.omis-related-offer-title,
+	.omis-related-header h2{
+		font-size: 32px;
+	}
+	.omis-related-header{
+		text-align: left;
+		margin-bottom: 32px;
+	}
+	.omis-related-offer{
+		text-align: left;
+	}
+	.omis-related-offer-subtitle{
+		margin-bottom: 8px;
+		font-size: 18px;
+	}
+	.omis-related-offer .omis-button{
+		max-width: 100%;
+		width: 100%;
+	}
+	.omis-related-offer{
+		padding-top: 56px;
+	}
+	.omis-related{
+		padding: 56px 0;
+	}
+}
+@media (max-width: 450px){}
+/* end Related */
