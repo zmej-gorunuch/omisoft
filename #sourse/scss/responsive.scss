@@ -374,6 +374,7 @@
         margin-bottom: 30px;
         font-size: 38px;
     }
+
     .service-container {
         padding-left: 80px;
         padding-right: 80px;
@@ -561,7 +562,9 @@
         padding-bottom: 120px;
     }
 
-
+    .omis-header.omis-header_black .omis-header-toggle.main-heaer-inner-show-xs {
+        filter: invert(0);
+    }
 
 
 
@@ -599,7 +602,7 @@
     .service-whatwedo:after,
     .service-benefits:after,
     .service-welcomesection:after {
-        background-image: url(../img/grain1.png), url(../img/grid.png);
+        background-image: url(../images/grain1.png), url(../images/grid.png);
         background-size: auto;
         background-position: left top - 3px;
         background-repeat: repeat, no-repeat;
@@ -613,7 +616,484 @@
 }
 
 @media(max-width:767.8px) {
-   
 
-    
+    .service-welcomesection .service-welcomesection__ratedsection {
+        flex-wrap: wrap;
+
+        a {
+            width: 50%;
+            margin-bottom: 30px;
+
+            &:nth-child(2) {
+                .ratedbox {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 104px;
+                    height: 2px;
+                    background: url('../images/horline.png') no-repeat center top;
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .service-welcomesection .ratedbox:after {
+        height: 104px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .service-whatwedo .devservices .devservice {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .service-whatwedo .devservices:after {
+        position: relative;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .servoperatesl-wrapper .linepoints span:nth-child(3) {
+        display: none;
+    }
+
+    .service-workin .techstack .serviserow__leftsect {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .service-workin .techstack .serviserow__rightsect {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .service-workin .techstack .serviserow__rightsect {
+        .techstack__col:nth-child(1) {
+            max-width: 33.333%;
+            flex: 0 0 33.333%;
+        }
+
+        .techstack__col:nth-child(2) {
+            max-width: 66.666%;
+            flex: 0 0 66.666%;
+
+            .techstack__box {
+                width: 50%;
+            }
+        }
+    }
+
+    .service-workin .techstack .techstack__box {
+        height: 150px;
+    }
+
+    .service-workin .techstack .techstack__box img {
+        width: 60px;
+    }
+
+    .service-workin .techstack .techstack__box {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+
+    .service-workin .techstack .serviserow__rightsect {
+        padding-top: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .service-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .service-welcomesection h1 {
+        font-size: 32px;
+        line-height: 120%;
+        margin-bottom: 16px;
+    }
+
+    .service-welcomesection {
+        padding: 40px 0;
+    }
+
+    .service-welcomesection .service-welcomesection__descr {
+        line-height: 160%;
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .service-welcomesection .service-welcomesection__link {
+        width: 100%;
+        max-width: 400px;
+        min-height: 56px;
+        font-size: 14px;
+    }
+
+    .service-welcomesection .service-welcomesection__ratedsection {
+        margin-top: 40px;
+    }
+
+    .service-welcomesection .ratedbox .descr {
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    .service-welcomesection .ratedbox {
+        max-width: 144px;
+        padding: 0 5px;
+    }
+
+    .service-welcomesection .service-welcomesection__ratedsection {
+        padding: 32px 15px;
+    }
+
+    .service-welcomesection .service-welcomesection__ratedsection a {
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
+    }
+
+
+    .service-benefits h3 {
+        margin-bottom: 32px;
+    }
+
+    .service-benefits .benefitssection .benefit {
+        margin-bottom: 15px;
+        padding: 24px 15px 35px;
+        border: 1px solid rgba(#DBFF74, 0.5);
+    }
+
+    .service-benefits .benefitssection .benefit img {
+        max-width: 48px;
+    }
+
+    .service-benefits .benefitssection .benefit .title {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    .service-benefits .benefitssection .benefit .descr {
+        font-size: 14px;
+        line-height: 160%;
+    }
+
+    .service-whatwedo .devservices .devservice {
+        margin-top: 32px;
+    }
+
+    .service-whatwedo h3 {
+        margin-bottom: 16px;
+    }
+
+    .service-whatwedo .devservices .devservice img {
+        height: 48px;
+        margin-bottom: 12px;
+    }
+
+    .service-whatwedo .devservices .devservice .title {
+        font-size: 16px;
+    }
+
+    .service-whatwedo .devservices .devservice .descr {
+        line-height: 160%;
+    }
+
+    .service-whatwedo .devservices:after {
+        bottom: 0;
+        margin-top: 48px;
+    }
+
+    .service-whatwedo .devservices:after {
+        transform: rotate(5.64deg);
+    }
+
+    .servoperateslider__box .num {
+        text-align: left;
+        font-size: 104px;
+        line-height: 130%;
+    }
+
+    .servoperateslider__box .title {
+        text-align: left;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .servoperateslider__box .descr {
+        line-height: 160%;
+    }
+
+    .servoperatesl-wrapper .linepoints {
+        width: calc(100% - 140px);
+        left: initial;
+        right: 80px;
+        top: 58px;
+    }
+
+    .servoperateslider__box {
+        max-width: initial;
+    }
+
+    .service-operate,
+    .service-workin {
+        .service-container {
+            padding-right: 0;
+        }
+
+        .section-subtitle,
+        h3 {
+            padding-right: 15px;
+        }
+    }
+
+    .service-workin h3 {
+        margin-bottom: 48px;
+    }
+
+    .service-workin .workinslider__slide p {
+        font-size: 16px;
+        bottom: 30px;
+    }
+
+    .service-workin .workinslider .slick-track {
+        padding-bottom: 80px;
+    }
+
+    .service-workin .techstack .serviserow__leftsect .section-subtitle {
+        margin-bottom: 8px;
+    }
+
+    .techstack .serviserow {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .service-workin .techstack .serviserow__leftsect,
+    .service-workin .techstack .serviserow__rightsect {
+        padding-left: 0;
+    }
+
+    .service-workin .techstack .serviserow__rightsect {
+        padding-right: 24px;
+    }
+
+    .service-workin .techstack .techstack__box p {
+        font-size: 14px;
+    }
+
+    .service-workin .techstack .techstack__box {
+        padding: 15px 10px 10px 10px;
+    }
+
+    .service-workin .techstack .techstack__box img {
+        width: 48px;
+    }
+
+    .service-workin .techstack .techstack__box {
+        height: 105px;
+    }
+
+    .service-ourworks br {
+        display: none;
+    }
+
+    .service-ourworks h3 {
+        margin-bottom: 48px;
+    }
+
+    .service-ourworks .worksect {
+        padding: 32px 0 12px;
+    }
+
+    .service-ourworks .worksect .worksect-container {
+        padding: 0 24px;
+    }
+
+    .service-ourworks .worksect-container .worksect__textbox .textboxwrap {
+        text-align: left;
+    }
+
+    .service-ourworks .worksect-container .worksect__textbox .title {
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 135%;
+    }
+
+    .service-whatwedo .devservices .devservice {
+        padding: 0;
+    }
+
+    .service-ourworks .worksect-container .worksect__textbox .descr {
+        font-size: 14px;
+        line-height: 200%;
+        margin-bottom: 32px;
+    }
+
+    .service-ourworks .worksect-container .worksect__textbox ul li {
+        font-size: 12px;
+        margin-right: 16px;
+    }
+
+    .service-ourworks .worksect-container .worksect__textbox ul li:after {
+        right: -13px;
+    }
+
+    .service-ourworks .worksect-container .worksect__picbox img {
+        display: none;
+    }
+
+    .service-ourworks .worksect-container .worksect__picbox img.mobpic {
+        display: block;
+        max-width: 270px;
+    }
+
+    .service-ourworks .worksect-container .worksect__picbox img {
+        margin-left: 0;
+    }
+
+    .service-ourworks .cases-wrapper .worksect:nth-child(2n) .worksect-container .worksect__textbox .textboxwrap {
+        text-align: left;
+    }
+
+    .service-faq .service-faqrow .service-faqrow__header p {
+        font-size: 14px;
+    }
+
+    .service-faq .service-faqrow .service-faqrow__header {
+        padding-left: 16px;
+        padding-right: 55px;
+    }
+
+    .service-faq .service-faqrow .service-faqrow__header {
+        height: auto;
+        min-height: 68px;
+    }
+
+    .service-faq .service-faqrow .service-faqrow__header .faqbtn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .service-faq .service-faqrow .service-faqrow__body p {
+        font-size: 14px;
+    }
+
+    .service-faq .service-faqrow .service-faqrow__body {
+        padding: 8px 16px 20px 16px;
+    }
+
+
+
+
+
+    // background: #0F0F10;
+
+
+
+
+    .service-benefits:after,
+    .service-welcomesection:after,
+    .service-whatwedo:after,
+    .service-operate:after,
+    .service-workin:after,
+    .service-ourworks:after {
+        display: none;
+    }
+
+    .service-benefits,
+    .service-faq,
+    .service-operate,
+    .service-welcomesection,
+    .service-workin,
+    .service-whatwedo {
+        padding: 40px 0;
+    }
+
+    .service-ourworks {
+        padding-top: 40px;
+    }
+
+    .service-benefits h3,
+    .service-operate h3,
+    .service-ourworks h3,
+    .service-whatwedo h3,
+    .service-workin h3,
+    .service-faq h3 {
+        text-align: left;
+        font-size: 32px;
+    }
+
+    .service-benefits .section-subtitle,
+    .service-whatwedo .section-subtitle,
+    .service-operate .section-subtitle,
+    .service-workin .section-subtitle,
+    .section-subtitle,
+    .service-ourworks .section-subtitle {
+        font-size: 12px;
+        line-height: 130%;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+@media(max-width:480.8px) {
+    .servoperatesl-wrapper .linepoints {
+        width: calc(100% - 110px);
+        right: 50px;
+    }
+}
+
+@media(max-width:375.8px) {
+    .servoperatesl-wrapper .linepoints {
+        width: calc(100% - 100px);
+        right: 40px;
+    }
 }
