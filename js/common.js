@@ -46,8 +46,8 @@ $(document).ready(function () {
         $(this).toggleClass('open');
 
 
-        $('.service-faqrow__body').not($(this).next('.service-faqrow__body')).slideUp();
-        $(this).next('.service-faqrow__body').slideToggle();
+        $('.service-faqrow__body').not($(this).next('.service-faqrow__body')).slideUp('fast');
+        $(this).next('.service-faqrow__body').slideToggle('fast');
     });
 
 
