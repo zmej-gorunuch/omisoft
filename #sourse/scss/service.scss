@@ -976,9 +976,75 @@
     display: none;
 }
 
-.worksect  {
+.worksect {
     transition: 0.7s;
 }
+
+
+
+
+// 19.04
+.servoperatesl-wrapper {
+    .linepoints[data-point='5'] {
+        span {
+            &:nth-child(6) {
+                display: none;
+            }
+        }
+    }
+
+    .linepoints[data-point='4'] {
+        span {
+
+            &:nth-child(6),
+            &:nth-child(5) {
+                display: none;
+            }
+        }
+    }
+
+    .linepoints[data-point='3'] {
+
+        span {
+
+            &:nth-child(6),
+            &:nth-child(5),
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+    }
+    .linepoints[data-point='2'] {
+
+        span {
+
+            &:nth-child(6),
+            &:nth-child(5),
+            &:nth-child(4),
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(min-width:767px) {
+    .linepoints[data-point='4'] {
+        width: 75% !important;
+    }
+    .linepoints[data-point='3'] {
+        width: 70% !important;
+    }
+    .linepoints[data-point='2'] {
+        width: 52% !important;
+    }
+}
+
+
+
+
+
+
 
 
 

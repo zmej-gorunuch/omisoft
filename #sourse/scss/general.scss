@@ -58,3 +58,6 @@ body {
     line-height: 130%;
 }
 
+body.noscroll {
+    overflow: hidden;
+}
