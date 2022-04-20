@@ -12,6 +12,8 @@ header.header {
         box-shadow: 0px 1px 0px rgba(201, 250, 61, 0.29);
     }
 
+
+
     .header__logo {
         width: 100%;
         max-width: 165px;
@@ -164,7 +166,7 @@ header.header {
             display: inline-block;
         }
 
-        img {
+        svg {
             vertical-align: middle;
             margin-top: -2px;
         }
@@ -206,4 +208,52 @@ header.header {
 
 .mobletschat {
     display: none;
+}
+
+
+
+
+
+
+header.header.header__white {
+    background: #fff;
+
+    .header__logo {
+        filter: invert(1);
+    }
+
+    .header__nav ul.header__menu>li {
+        color: #212121;
+
+        a {
+            color: #212121;
+        }
+
+    }
+
+    .header__chat {
+        span {
+            color: #212121;
+        }
+
+        svg {
+            path {
+                stroke: #212121;
+            }
+        }
+    }
+
+    .header__burger span {
+        background: #212121;
+    }
+}
+
+@media(max-width:767.8px) {
+    header.header.header__white .header__nav ul.header__menu>li {
+        color: #fff;
+
+        a {
+            color: #fff;
+        }
+    }
 }
