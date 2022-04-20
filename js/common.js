@@ -155,7 +155,7 @@
             // 19.04
             if ($(window).width() < 1025) {
                 $('.sublink span').click(function () {
-                    $(this).parent('li').find('.submenu').toggle();
+                    $(this).parents('li').find('.submenu').toggle();
                 });
             }
 
