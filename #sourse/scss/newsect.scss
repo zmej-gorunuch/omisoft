@@ -1,0 +1,757 @@
+.service-workin {
+    padding: 120px 0;
+
+    .serviserow__stacksblock {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+
+        .title {
+            margin-bottom: 48px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 120%;
+        }
+
+        .stackswrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 60px;
+
+            .techstack__box {
+                width: calc(20% - 20px);
+                margin-bottom: 20px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}
+
+.serviserow__stacksblock {
+    padding: 0 15px;
+}
+
+// TESTIMONIALS
+
+.service-testimonials {
+    padding: 120px 0;
+    background: #0F0F10;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/grain.png), url(../images/grid.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100% 100%, 100% 100%;
+        background-position: 0 0, 0 -1px;
+        z-index: 1;
+    }
+
+    h3 {
+        text-align: center;
+        margin-bottom: 0;
+        color: #fff;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 120%;
+        text-align: left;
+    }
+
+    .servtestim__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        margin-bottom: 88px;
+
+        .servtestim__header-left {
+            width: 100%;
+            max-width: 70%;
+            flex: 0 0 70%;
+        }
+
+        .servtestim__header-right {
+            width: 100%;
+            max-width: 30%;
+            flex: 0 0 30%;
+            text-align: right;
+            padding-bottom: 10px;
+
+            a {
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #C9FA3D;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 130%;
+                background: #0F0F10;
+                border: 1px solid #C9FA3D;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 67px;
+                padding: 5px 44px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #0F0F10;
+                    background: #C9FA3D;
+                }
+            }
+        }
+    }
+
+    .testimonialslider {
+        color: #fff;
+        margin-left: -20px;
+        margin-right: -20px;
+
+        .slick-slide {
+            padding: 0 20px;
+        }
+    }
+
+    .testimonialslide {
+        padding: 56px;
+        background: rgba(19, 19, 21, 0.7);
+        box-shadow: 0px 26px 22px rgba(0, 0, 0, 0.25);
+        border: 1px solid;
+        border-image-slice: 1;
+        border-width: 1px;
+        border-image-source: linear-gradient(77.09deg, rgba(#CDFF7C, 1) 28.29%, rgba(#8CFFAC, 1) 87.22%);
+
+        .descr {
+            margin-bottom: 55px;
+            min-height: 280px;
+
+            p {
+                margin: 0;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 200%;
+                color: #fff;
+                // display: -webkit-box;
+                // -webkit-line-clamp: 5;
+                // -webkit-box-orient: vertical;
+                // overflow: hidden;
+            }
+
+            .rating {
+                margin-top: 15px;
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 200%;
+                    color: #fff;
+                    margin-right: 2px;
+                }
+
+                .stars {
+                    display: inline-flex;
+                    vertical-align: middle;
+                    align-items: center;
+
+                    img {
+                        margin: 0 2px;
+                    }
+                }
+            }
+        }
+
+        .bottext {
+            color: #fff;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 135%;
+            margin: 0;
+        }
+    }
+
+}
+
+// POSTSECT
+
+.service-postbox {
+    padding: 207px 0 190px;
+    background: #0F0F10;
+    position: relative;
+
+    .postbox__wrapper {
+        max-width: 1492px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.8);
+        border: 1px solid rgba(140, 255, 172, 0.2);
+        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.46);
+        border-radius: 24px;
+        padding: 106px 124px 114px 124px;
+        position: relative;
+
+        .textbox {
+            width: 74%;
+
+            h3 {
+                margin-bottom: 48px;
+                color: #fff;
+                font-weight: 700;
+                font-size: 72px;
+                line-height: 120%;
+            }
+
+            .descr {
+                margin-bottom: 65px;
+                max-width: 750px;
+
+                p {
+                    margin: 0;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 175%;
+                }
+
+            }
+
+            a {
+                letter-spacing: 0.02em;
+                color: #0F0F10;
+                text-align: center;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 130%;
+                padding: 22px 44px;
+                background: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
+                font-family: 'Montserrat', sans-serif;
+            }
+
+        }
+
+        .postpic {
+            position: absolute;
+            right: -80px;
+            bottom: -100px;
+        }
+
+        .hirebox {
+            position: relative;
+            padding: 45px 0 50px;
+            text-align: center;
+
+            h3 {
+                font-weight: 700;
+                font-size: 72px;
+                line-height: 120%;
+                color: #fff;
+                margin-bottom: 120px;
+            }
+
+            a {
+                font-weight: 500;
+                font-size: 72px;
+                line-height: 114%;
+                font-style: italic;
+                color: #fff;
+                position: relative;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #C9FA3D;
+                }
+
+                img {
+                    vertical-align: middle;
+                    width: 124px;
+                    margin-top: -20px;
+                }
+            }
+
+            .circlesimg {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                display: block;
+                top: -220px;
+            }
+        }
+
+
+        &.circles {
+            background: rgba(15, 15, 16, 0.9);
+        }
+    }
+
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/grain.png), url(../images/new/gridnew.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100% 100%, 100% 100%;
+        background-position: 0 0, 0 -1px;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1600.8px) {
+    .serviserow__stacksblock .stackswrapper .techstack__box {
+        padding: 50px 15px 30px 15px;
+        height: 240px;
+    }
+
+    .serviserow__stacksblock .title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .service-testimonials h3 {
+        font-size: 54px;
+    }
+
+    .service-testimonials .servtestim__header .servtestim__header-right a {
+        font-size: 16px;
+        min-height: 54px;
+        padding: 4px 35px;
+    }
+
+    .service-testimonials .servtestim__header .servtestim__header-right {
+        padding-bottom: 0;
+    }
+
+    .service-testimonials .testimonialslide {
+        padding: 25px;
+    }
+
+    .service-testimonials .testimonialslide .descr p,
+    .service-testimonials .testimonialslide .descr .rating span {
+        font-size: 16px;
+    }
+
+    .service-testimonials .testimonialslide .descr .rating .stars img {
+        width: 30px;
+    }
+
+    .service-testimonials .testimonialslide .bottext {
+        font-size: 18px;
+    }
+
+    .service-testimonials .testimonialslide .descr {
+        min-height: 250px;
+        margin-bottom: 30px;
+    }
+
+    .service-postbox .postbox__wrapper {
+        padding: 70px;
+    }
+
+    .service-postbox .postbox__wrapper .textbox .descr p {
+        font-size: 21px;
+    }
+
+    .service-postbox .postbox__wrapper .textbox {
+        width: 60%;
+    }
+
+    .service-postbox .postbox__wrapper .textbox a {
+        font-size: 16px;
+        padding: 18px 35px;
+    }
+
+    .service-postbox .postbox__wrapper .postpic {
+        width: 550px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox a img {
+        width: 74px;
+        margin-top: -15px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox .circlesimg {
+        width: 500px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox .circlesimg {
+        top: -160px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox h3 {
+        margin-bottom: 90px;
+    }
+
+
+
+
+
+
+
+    .service-postbox .postbox__wrapper .hirebox a {
+        font-size: 44px;
+    }
+
+    .service-workin,
+    .service-testimonials,
+    .service-postbox {
+        padding: 100px 0;
+    }
+
+    .service-postbox .postbox__wrapper .textbox h3,
+    .service-postbox .postbox__wrapper .hirebox h3 {
+        font-size: 54px;
+    }
+
+}
+
+@media(max-width:1400.8px) {
+    .serviserow__stacksblock .stackswrapper .techstack__box {
+        height: 210px;
+
+        img {
+            max-width: 100px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .service-postbox .postbox__wrapper .textbox h3 {
+        margin-bottom: 30px;
+    }
+
+    .service-postbox .postbox__wrapper .postpic {
+        width: 450px;
+    }
+
+    .service-postbox .postbox__wrapper .textbox .descr p {
+        font-size: 18px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox .circlesimg {
+        width: 430px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox a {
+        font-size: 38px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox {
+        padding-bottom: 0;
+    }
+
+
+
+
+    .service-testimonials h3,
+    .service-postbox .postbox__wrapper .textbox h3,
+    .service-postbox .postbox__wrapper .hirebox h3 {
+        font-size: 46px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .service-postbox .postbox__wrapper .textbox {
+        width: 100%;
+    }
+
+    .service-postbox .postbox__wrapper .postpic {
+        width: 350px;
+    }
+
+    .service-postbox .postbox__wrapper .postpic {
+        bottom: -130px;
+    }
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .service-workin .serviserow__stacksblock .stackswrapper .techstack__box {
+        width: calc(33% - 20px);
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .service-workin .serviserow__stacksblock .stackswrapper {
+        justify-content: center;
+    }
+
+    .serviserow__stacksblock .stackswrapper .techstack__box {
+        height: 190px;
+    }
+
+    .service-workin:after,
+    .service-testimonials:after {
+        background-image: url(../images/grain1.png), url(../images/grid.png);
+        background-size: auto;
+        background-position: left top-3px;
+        background-repeat: repeat, no-repeat;
+    }
+
+    .service-testimonials h3 {
+        font-size: 38px;
+    }
+
+    .service-testimonials .servtestim__header .servtestim__header-left,
+    .service-testimonials .servtestim__header .servtestim__header-right {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: left;
+    }
+
+    .service-testimonials .servtestim__header .servtestim__header-right a {
+        margin-top: 20px;
+    }
+
+    .service-testimonials .servtestim__header {
+        margin-bottom: 50px;
+    }
+
+    .service-testimonials .testimonialslide .descr {
+        min-height: inherit;
+    }
+
+    .service-testimonials .testimonialslide .descr .rating span,
+    .service-testimonials .testimonialslide .descr p {
+        font-size: 18px;
+    }
+
+    .service-postbox .postbox__wrapper .textbox h3 {
+        font-size: 38px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .service-postbox .postbox__wrapper {
+        padding: 30px 40px;
+    }
+
+    .service-postbox .postbox__wrapper .textbox a {
+        display: inline-block;
+    }
+
+    .service-postbox .postbox__wrapper .postpic {
+        width: 280px;
+        bottom: -80px;
+        right: -50px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox a img {
+        width: 54px;
+        margin-top: -10px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox .circlesimg {
+        width: 300px;
+        top: -80px;
+    }
+
+
+
+
+
+
+    .service-testimonials,
+    .service-workin,
+    .service-postbox {
+        padding: 70px 0;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox h3 {
+        font-size: 38px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox a {
+        font-size: 32px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .service-postbox .postbox__wrapper .textbox h3,
+    .service-postbox .postbox__wrapper .hirebox h3 {
+        font-size: 31px;
+    }
+
+    .service-postbox .postbox__wrapper {
+        padding: 20px;
+    }
+
+    .service-postbox .postbox__wrapper .postpic {
+        display: none;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox a {
+        font-size: 26px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox h3 {
+        margin-bottom: 70px;
+    }
+
+
+}
+
+@media(max-width:575.8px) {
+    .service-workin .serviserow__stacksblock .stackswrapper .techstack__box {
+        width: calc(50% - 20px);
+        height: 160px;
+        padding: 30px 15px 20px 15px;
+    }
+
+    .serviserow__stacksblock .stackswrapper .techstack__box img {
+        width: 100%;
+        max-width: 80px;
+    }
+
+    .stackswrapper {
+        padding-right: 15px;
+    }
+
+    .service-workin .serviserow__stacksblock .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .service-workin:after,
+    .service-testimonials:after {
+        display: none;
+    }
+
+    .serviserow__stacksblock {
+        padding: 0;
+    }
+
+    .service-testimonials .testimonialslide {
+        padding: 20px 25px;
+    }
+
+    .service-testimonials .testimonialslide .descr .rating .stars img {
+        width: 24px;
+    }
+
+    .service-testimonials .testimonialslide .bottext {
+        font-size: 16px;
+    }
+
+    .service-testimonials .testimonialslider .slick-slide {
+        padding: 0;
+    }
+
+    .service-testimonials .testimonialslider {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .service-postbox .postbox__wrapper .textbox .descr {
+        margin-bottom: 30px;
+    }
+
+    .service-postbox .postbox__wrapper {
+        border-radius: 10px;
+    }
+
+    .service-postbox .postbox__wrapper .textbox a {
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+        padding: 16px 20px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox h3 {
+        font-size: 26px;
+    }
+
+    .service-postbox  {
+        overflow: hidden;
+    }
+
+
+
+
+
+
+
+
+    .service-testimonials,
+    .service-workin,
+    .service-postbox {
+        padding: 40px 0;
+    }
+
+    .service-testimonials h3 {
+        font-size: 32px;
+    }
+
+    .service-postbox .postbox__wrapper .textbox h3 {
+        font-size: 26px;
+    }
+
+    .service-testimonials .testimonialslide .descr .rating span,
+    .service-testimonials .testimonialslide .descr p,
+    .service-postbox .postbox__wrapper .textbox .descr p {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:360.8px) {
+    .service-postbox .postbox__wrapper .hirebox h3 {
+        font-size: 22px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox .circlesimg {
+        width: 250px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox a {
+        font-size: 21px;
+    }
+
+    .service-postbox .postbox__wrapper .hirebox a img {
+        width: 34px;
+    }
+
+}

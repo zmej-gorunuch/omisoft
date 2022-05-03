@@ -168,6 +168,28 @@
 
 
 
+            // NEW SECTIONS
+            $('.testimonialslider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                infinite: true,
+                responsive: [{
+                        breakpoint: 1380,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 1,
+                            adaptiveHeight: true
+                        }
+                    }
+
+                ]
+            });
 
 
 
