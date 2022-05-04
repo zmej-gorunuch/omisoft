@@ -116,33 +116,39 @@
             );
 
             if ($('.worksect').length > 0) {
+                let bgSect = $('.cases-wrapper').attr('data-changecolor');
+                let bgattr = $('.worksect').attr('data-color');
+
+                $('.worksect').css('background', bgSect);
+
+
                 $(
                     function () {
                         $(document).scroll(
                             function () {
                                 if ($('.case1').length > 0) {
                                     if ($(this).scrollTop() >= $('.case1').offset().top - 350) {
-                                        $('.worksect').removeClass('worksect_red');
+                                        $('.worksect').css('background', bgSect);
                                     }
                                 }
                                 if ($('.case2').length > 0) {
                                     if ($(this).scrollTop() >= $('.case2').offset().top - 350) {
-                                        $('.worksect').addClass('worksect_red');
+                                        $('.worksect').css('background', bgattr);
                                     }
                                 }
                                 if ($('.case3').length > 0) {
                                     if ($(this).scrollTop() >= $('.case3').offset().top - 350) {
-                                        $('.worksect').removeClass('worksect_red');
+                                        $('.worksect').css('background', bgSect);
                                     }
                                 }
                                 if ($('.case4').length > 0) {
                                     if ($(this).scrollTop() >= $('.case4').offset().top - 350) {
-                                        $('.worksect').addClass('worksect_red');
+                                        $('.worksect').css('background', bgattr);
                                     }
                                 }
                                 if ($('.case5').length > 0) {
                                     if ($(this).scrollTop() >= $('.case5').offset().top - 350) {
-                                        $('.worksect').removeClass('worksect_red');
+                                        $('.worksect').css('background', bgSect);
                                     }
                                 }
                             }
@@ -165,8 +171,6 @@
                 $(this).toggleClass('open');
                 $('.header.header .header__nav').toggleClass('show');
             });
-
-
 
             // NEW SECTIONS
             $('.testimonialslider').slick({
