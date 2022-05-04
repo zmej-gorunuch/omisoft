@@ -116,11 +116,6 @@
             );
 
             if ($('.worksect').length > 0) {
-                let bgSect = $('.cases-wrapper').attr('data-changecolor');
-                let bgattr = $('.worksect').attr('data-color');
-
-                $('.worksect').css('background', bgSect);
-
 
                 $(
                     function () {
@@ -128,27 +123,38 @@
                             function () {
                                 if ($('.case1').length > 0) {
                                     if ($(this).scrollTop() >= $('.case1').offset().top - 350) {
-                                        $('.worksect').css('background', bgSect);
+
+                                        let bgattr = $('.case1').attr('data-color');
+                                        $('.worksect').css('background', bgattr);
                                     }
                                 }
                                 if ($('.case2').length > 0) {
                                     if ($(this).scrollTop() >= $('.case2').offset().top - 350) {
+
+                                        let bgattr = $('.case2').attr('data-color');
                                         $('.worksect').css('background', bgattr);
                                     }
                                 }
                                 if ($('.case3').length > 0) {
+
                                     if ($(this).scrollTop() >= $('.case3').offset().top - 350) {
-                                        $('.worksect').css('background', bgSect);
+
+                                        let bgattr = $('.case3').attr('data-color');
+                                        $('.worksect').css('background', bgattr);
                                     }
                                 }
                                 if ($('.case4').length > 0) {
+
                                     if ($(this).scrollTop() >= $('.case4').offset().top - 350) {
+                                        let bgattr = $('.case4').attr('data-color');
                                         $('.worksect').css('background', bgattr);
                                     }
                                 }
                                 if ($('.case5').length > 0) {
+
                                     if ($(this).scrollTop() >= $('.case5').offset().top - 350) {
-                                        $('.worksect').css('background', bgSect);
+                                        let bgattr = $('.case5').attr('data-color');
+                                        $('.worksect').css('background', bgattr);
                                     }
                                 }
                             }
