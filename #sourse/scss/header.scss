@@ -211,10 +211,6 @@ header.header {
 }
 
 
-
-
-
-
 header.header.header__white {
     background: #fff;
 
@@ -247,6 +243,22 @@ header.header.header__white {
         background: #212121;
     }
 }
+
+header.header.header__blackcolor {
+    background: #000000 !important;
+}
+
+header.header.header__blackcolor .header__burger span {
+    background: #fff !important;
+}
+
+header.header.header__blackcolor .header__logo {
+    filter: invert(0) !important;
+}
+
+
+
+
 
 @media(max-width:767.8px) {
     header.header.header__white .header__nav ul.header__menu>li {
