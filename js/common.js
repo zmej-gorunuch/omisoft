@@ -1,7 +1,7 @@
 (function ($) {
 
 	/*** PHP localize vars ***/
-	// let stages_count = php_vars['stages_count'];
+	let stages_count = 6;
 
 	$(document).ready(
 		function () {
