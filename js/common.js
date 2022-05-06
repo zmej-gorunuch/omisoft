@@ -173,6 +173,43 @@
 		]
 	});
 
+	// 06.05 - footer
+	$('.footerteamsl').slick({
+		autoplay: true,
+		autoplaySpeed: 500,
+		arrows: false,
+		speed: 1500,
+		centerMode: false,
+		dots: false,
+		slidesToShow: 10,
+		slidesToScroll: 1,
+		infinite: true,
+		responsive: [{
+				breakpoint: 1601,
+				settings: {
+					slidesToShow: 8,
+				}
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 6,
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 4,
+				}
+			},
+			{
+				breakpoint: 575,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+		]
+	});
 
 
 
