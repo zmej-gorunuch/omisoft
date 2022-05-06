@@ -211,7 +211,10 @@
 		]
 	});
 
-
+	// close banner
+	$('.closebox').click(function () {
+		$('.header__message').slideUp();
+	});
 
 
 
