@@ -315,16 +315,7 @@ div {
             }
         }
     }
-    .closebox {
-        border: none;
-        padding: 0;
-        background: transparent;
-        outline: none;
-        position: absolute;
-        right: 18px;
-        top: 18px;
-        cursor: pointer;
-    }
+    
 }
 
 
@@ -399,11 +390,6 @@ div {
 @media(max-width:575.8px) {
     .header__message {
         padding: 5px 24px;
-    }
-
-    .header__message .closebox {
-        right: 15px;
-        top: 15px;
     }
 
     .header__message p {
