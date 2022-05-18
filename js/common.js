@@ -143,7 +143,7 @@
 	$('.header__burger').click(
 		function () {
 			$('header.header').toggleClass('header__blackcolor');
-			// $('header.header').toggleClass('header__black');
+			$('.header__message').toggle();
 			$(window).scrollTop(0);
 			$('body').toggleClass('noscroll')
 			$(this).toggleClass('open');
@@ -181,7 +181,7 @@
 		speed: 1500,
 		centerMode: false,
 		dots: false,
-		slidesToShow: 10,
+		slidesToShow: 7,
 		slidesToScroll: 1,
 		infinite: true,
 		responsive: [{
@@ -215,7 +215,6 @@
 	$('.closebox').click(function () {
 		$('.header__message').slideUp();
 	});
-
 
 
 
