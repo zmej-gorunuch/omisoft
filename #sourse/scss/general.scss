@@ -103,3 +103,8 @@ body.noscroll {
         padding-bottom: 80px;
     }
 }
+
+.rowblock {
+    display: flex;
+    flex-wrap: wrap;
+}
