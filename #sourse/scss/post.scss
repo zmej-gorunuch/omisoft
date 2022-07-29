@@ -167,39 +167,39 @@
         opacity: 0.8;
     }
 
-    h2 {
-        font-weight: 800;
-        font-size: 36px;
-        line-height: 130%;
-    }
+    // h2 {
+    //     font-weight: 800;
+    //     font-size: 36px;
+    //     line-height: 130%;
+    // }
 
-    h3 {
-        font-weight: 800;
-        font-size: 32px;
-        line-height: 130%;
-        margin-bottom: 30px;
-    }
+    // h3 {
+    //     font-weight: 800;
+    //     font-size: 32px;
+    //     line-height: 130%;
+    //     margin-bottom: 30px;
+    // }
 
-    h4 {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 130%;
-        margin-bottom: 20px;
-    }
+    // h4 {
+    //     font-weight: 700;
+    //     font-size: 24px;
+    //     line-height: 130%;
+    //     margin-bottom: 20px;
+    // }
 
-    h5 {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 130%;
-        margin-bottom: 20px;
-    }
+    // h5 {
+    //     font-weight: 700;
+    //     font-size: 20px;
+    //     line-height: 130%;
+    //     margin-bottom: 20px;
+    // }
 
-    h6 {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 130%;
-        margin-bottom: 20px;
-    }
+    // h6 {
+    //     font-weight: 700;
+    //     font-size: 18px;
+    //     line-height: 130%;
+    //     margin-bottom: 20px;
+    // }
 
     &>p {
         color: #000000;
@@ -1165,3 +1165,168 @@
 }
 
 // Blog helpers
+
+.postmiansectbody__post h1 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120%;
+}
+
+.postmiansectbody__post h2 {
+    letter-spacing: 0.01em;
+    color: #000000;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 104%;
+    margin-bottom: 30px;
+}
+
+.postmiansectbody__post h3 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.postmiansectbody__post h4 {
+    color: #000000;
+    opacity: 0.8;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+
+.postmiansectbody__post h5 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 135%;
+    color: #000000;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.postmiansectbody__post h6 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.postmiansectbody__post ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    // list-style-type: decimal-leading-zero;
+
+    li {
+        counter-increment: my-awesome-counter;
+    }
+
+    li::before {
+        content: counter(my-awesome-counter) ". ";
+        background: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+}
+
+.posttablewrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.posttable {
+    border-spacing: 10px;
+    border-collapse: separate;
+    th, td {
+        padding: 12px 17px;   
+        background: #F6F6F6;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000000;
+    }
+}
+
+.postmiansectbody__post>p a {
+    color: #3663D8;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.codeexample {
+    padding: 12px;
+    background: #F6F6F6;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+@media(max-width:991.8px) {
+    .postmiansectbody__post h1 {
+        font-size: 42px;
+    }
+    .postmiansectbody__post h2 {
+        font-size: 32px;
+    }
+
+    .postmiansectbody__post h3 {
+        font-size: 30px;
+    }
+
+    .postmiansectbody__post h4 {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .posttablewrapper {
+        overflow: scroll;
+    }
+    .posttable {
+        width: 800px;
+    }
+    .codeexample {
+        display: block;
+        overflow: auto;
+    }
+}
+
+@media(max-width:575.8px) {
+    .postmiansectbody__post h1 {
+        font-size: 38px;
+    }
+    .postmiansectbody__post h2 {
+        font-size: 36px;
+    }
+    .postmiansectbody__post h3 {
+        font-size: 32px;
+    }
+    .postmiansectbody__post h4 {
+        font-size: 21px;
+    }
+    .postmiansectbody__post h5,
+    .postmiansectbody__post h6 {
+        font-size: 16px;
+    }
+
+    .postmiansectbody__post ol {
+        padding-left: 0;
+
+        li {
+            padding-left: 0;
+        }
+    }
+}
