@@ -239,11 +239,17 @@
     .service-whatwedo h3,
     .service-operate h3,
     .service-workin h3,
-    .service-ourworks h3 {
+    .service-ourworks h3,
+    
+    .service-benefits h2,
+    .service-whatwedo h2,
+    .service-operate h2,
+    .service-workin h2,
+    .service-ourworks h2{
         font-size: 54px;
     }
 
-    .service-faq h3 {
+    .service-faq h3, .service-faq h2 {
         font-size: 46px;
     }
 
@@ -336,7 +342,12 @@
     .service-operate h3,
     .service-ourworks h3,
     .service-whatwedo h3,
-    .service-workin h3 {
+    .service-workin h3,
+    .service-benefits h2,
+    .service-operate h2,
+    .service-ourworks h2,
+    .service-whatwedo h2,
+    .service-workin h2 {
         font-size: 46px;
     }
 
@@ -529,7 +540,8 @@
         text-align: center;
     }
 
-    .service-workin h3 {
+    .service-workin h3,
+    .service-workin h2 {
         margin-bottom: 50px;
     }
 
@@ -639,7 +651,13 @@
     .service-workin h3 {
         font-size: 38px;
     }
-
+    .service-benefits h2,
+    .service-operate h2,
+    .service-ourworks h2,
+    .service-whatwedo h2,
+    .service-workin h2 {
+        font-size: 38px;
+    }
 
 
     .service-whatwedo:after,
@@ -1070,7 +1088,8 @@
         }
     }
 
-    .service-workin h3 {
+    .service-workin h3,
+    .service-workin h2 {
         margin-bottom: 48px;
     }
 
@@ -1266,6 +1285,16 @@
     .service-whatwedo h3,
     .service-workin h3,
     .service-faq h3 {
+        text-align: left;
+        font-size: 32px;
+    }
+
+    .service-benefits h2,
+    .service-operate h2,
+    .service-ourworks h2,
+    .service-whatwedo h2,
+    .service-workin h2,
+    .service-faq h2 {
         text-align: left;
         font-size: 32px;
     }

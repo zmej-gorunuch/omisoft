@@ -233,5 +233,20 @@
 
 
 
+	if ($('.header__message')) {
+		$('header.fixed').addClass('support');
+	}
+
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 1) {
+			$('.header__message').addClass('hide');
+			$('header.fixed').removeClass('support');
+        }
+        else {
+			$('.header__message').removeClass('hide');
+			$('header.fixed').addClass('support');
+        }
+    });
+
 
 }(jQuery));

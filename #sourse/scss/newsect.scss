@@ -59,7 +59,7 @@
         z-index: 1;
     }
 
-    h3 {
+    h3, h2 {
         text-align: center;
         margin-bottom: 0;
         color: #fff;
@@ -203,7 +203,7 @@
         .textbox {
             width: 74%;
 
-            h3 {
+            h3, h2 {
                 margin-bottom: 48px;
                 color: #fff;
                 font-weight: 700;
@@ -250,7 +250,7 @@
             padding: 45px 0 50px;
             text-align: center;
 
-            h3 {
+            h3, h2 {
                 font-weight: 700;
                 font-size: 72px;
                 line-height: 120%;
@@ -343,7 +343,8 @@
         margin-bottom: 30px;
     }
 
-    .service-testimonials h3 {
+    .service-testimonials h3,
+    .service-testimonials h2 {
         font-size: 54px;
     }
 
@@ -413,7 +414,8 @@
         top: -160px;
     }
 
-    .service-postbox .postbox__wrapper .hirebox h3 {
+    .service-postbox .postbox__wrapper .hirebox h3,
+    .service-postbox .postbox__wrapper .hirebox h2 {
         margin-bottom: 90px;
     }
 
@@ -437,7 +439,10 @@
     .service-postbox .postbox__wrapper .hirebox h3 {
         font-size: 54px;
     }
-
+    .service-postbox .postbox__wrapper .textbox h2,
+    .service-postbox .postbox__wrapper .hirebox h2 {
+        font-size: 54px;
+    }
 }
 
 @media(max-width:1400.8px) {
@@ -453,7 +458,8 @@
         }
     }
 
-    .service-postbox .postbox__wrapper .textbox h3 {
+    .service-postbox .postbox__wrapper .textbox h3,
+    .service-postbox .postbox__wrapper .textbox h2 {
         margin-bottom: 30px;
     }
 
@@ -480,9 +486,11 @@
 
 
 
-    .service-testimonials h3,
+    .service-testimonials h3, .service-testimonials h2,
     .service-postbox .postbox__wrapper .textbox h3,
-    .service-postbox .postbox__wrapper .hirebox h3 {
+    .service-postbox .postbox__wrapper .hirebox h3,
+    .service-postbox .postbox__wrapper .textbox h2,
+    .service-postbox .postbox__wrapper .hirebox h2 {
         font-size: 46px;
     }
 
@@ -530,7 +538,7 @@
         background-repeat: repeat, no-repeat;
     }
 
-    .service-testimonials h3 {
+    .service-testimonials h3, .service-testimonials h2 {
         font-size: 38px;
     }
 
@@ -558,7 +566,8 @@
         font-size: 18px;
     }
 
-    .service-postbox .postbox__wrapper .textbox h3 {
+    .service-postbox .postbox__wrapper .textbox h3,
+    .service-postbox .postbox__wrapper .textbox h2 {
         font-size: 38px;
 
         br {
@@ -601,7 +610,8 @@
         padding: 70px 0;
     }
 
-    .service-postbox .postbox__wrapper .hirebox h3 {
+    .service-postbox .postbox__wrapper .hirebox h3,
+    .service-postbox .postbox__wrapper .hirebox h2 {
         font-size: 38px;
     }
 
@@ -613,7 +623,9 @@
 
 @media(max-width:767.8px) {
     .service-postbox .postbox__wrapper .textbox h3,
-    .service-postbox .postbox__wrapper .hirebox h3 {
+    .service-postbox .postbox__wrapper .hirebox h3,
+    .service-postbox .postbox__wrapper .textbox h2,
+    .service-postbox .postbox__wrapper .hirebox h2 {
         font-size: 31px;
     }
 
@@ -629,7 +641,8 @@
         font-size: 26px;
     }
 
-    .service-postbox .postbox__wrapper .hirebox h3 {
+    .service-postbox .postbox__wrapper .hirebox h3,
+    .service-postbox .postbox__wrapper .hirebox h2 {
         margin-bottom: 70px;
     }
 
@@ -703,7 +716,8 @@
         padding: 16px 20px;
     }
 
-    .service-postbox .postbox__wrapper .hirebox h3 {
+    .service-postbox .postbox__wrapper .hirebox h3,
+    .service-postbox .postbox__wrapper .hirebox h2 {
         font-size: 26px;
     }
 
@@ -724,11 +738,12 @@
         padding: 40px 0;
     }
 
-    .service-testimonials h3 {
+    .service-testimonials h3, .service-testimonials h2 {
         font-size: 32px;
     }
 
-    .service-postbox .postbox__wrapper .textbox h3 {
+    .service-postbox .postbox__wrapper .textbox h3,
+    .service-postbox .postbox__wrapper .textbox h2 {
         font-size: 26px;
     }
 
@@ -741,7 +756,8 @@
 }
 
 @media(max-width:360.8px) {
-    .service-postbox .postbox__wrapper .hirebox h3 {
+    .service-postbox .postbox__wrapper .hirebox h3,
+    .service-postbox .postbox__wrapper .hirebox h2 {
         font-size: 22px;
     }
 
