@@ -1239,20 +1239,22 @@
 .posttablewrapper {
     width: 100%;
     overflow: hidden;
-}
 
-.posttable {
-    border-spacing: 10px;
-    border-collapse: separate;
-    th, td {
-        padding: 12px 17px;   
-        background: #F6F6F6;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 150%;
-        color: #000000;
+    table {
+        border-spacing: 10px;
+        border-collapse: separate;
+        th, td {
+            padding: 12px 17px;   
+            background: #F6F6F6;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: #000000;
+        }
     }
 }
+
+
 
 .postmiansectbody__post>p a {
     color: #3663D8;
@@ -1308,10 +1310,12 @@
 @media(max-width:767.8px) {
     .posttablewrapper {
         overflow: scroll;
+
+        table {
+            width: 800px;
+        }
     }
-    .posttable {
-        width: 800px;
-    }
+   
     .codeexample {
         display: block;
         overflow: auto;
