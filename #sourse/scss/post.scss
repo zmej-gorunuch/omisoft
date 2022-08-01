@@ -1525,6 +1525,11 @@
         }
     }
 
-
-    
+    .postbox-col:not(.w-100) .postbox__body-top {
+        height: auto;
+    }
+    .postbox-col:not(.w-100) .postbox .postbox__body,
+    .postbox-col:not(.w-100) .postbox {
+        height: auto;
+    }
 }
