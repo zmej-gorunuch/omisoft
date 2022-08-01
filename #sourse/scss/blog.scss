@@ -10,7 +10,7 @@
 }
 
 .blog__header {
-    padding: 76px 0 115px;
+    padding: 76px 0 50px;
     text-align: center;
 
     h1 {
@@ -24,7 +24,7 @@
 }
 
 .blog__tagsection {
-    max-width: 405px;
+    max-width: 480px;
     width: 100%;
     margin: 0 auto;
 
@@ -86,7 +86,7 @@
     }
 
     .postbox__body {
-        padding: 16px 40px 30px 40px;
+        // padding: 16px 40px 30px 40px;
         background: #fff;
     }
 
@@ -242,30 +242,32 @@
 .postbox-subscribe {
     height: 100%;
     background: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
-    padding: 62px 20px 40px;
+    padding: 49px 38px;
 
     .postbox-subscribe__title {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         color: #000000;
         opacity: 0.8;
         font-weight: 700;
         font-size: 32px;
         line-height: 150%;
+        text-align: center;
+        font-family: 'Montserrat';
     }
 
     .postbox-subscribe__descr {
-        background: url('../images/new/subscribe-pic.png') no-repeat right 40px top 50% / 81px;
-        margin-bottom: 35px;
+        background: url('../images/new/subscribe-pic.png') no-repeat right 15px top 50% / 81px;
+        margin-bottom: 50px;
 
         p {
-            max-width: 200px;
+            max-width: 205px;
             margin: 0;
             color: #000000;
             opacity: 0.8;
             font-weight: 500;
-            font-size: 16px;
-            // white-space: pre-line;
+            font-size: 18px;
             line-height: 150%;
+            font-family: 'Montserrat';
         }
     }
 
@@ -674,18 +676,14 @@
         font-size: 56px;
     }
 
-    .blog__header {
-        padding-bottom: 70px;
-    }
-
     .postbox .title {
         font-size: 20px;
         line-height: 28px;
     }
 
-    .postbox .postbox__body {
-        padding: 10px 20px 20px 20px;
-    }
+    // .postbox .postbox__body {
+    //     padding: 10px 20px 20px 20px;
+    // }
 
     .postbox .postbox__bottsect .postbox__author {
         padding-right: 5px;
@@ -785,7 +783,7 @@
     }
 
     .blog__header {
-        padding: 60px 0 70px;
+        padding: 60px 0 40px;
     }
 
     .postbox-col.w-100 .postbox {
@@ -1019,8 +1017,8 @@
         max-width: 100%;
     }
 
-    .postbox-col.w-100 .postbox .postbox__body,
-    .postbox .postbox__body {
+    .postbox-col.w-100 .postbox .postbox__body
+     {
         padding: 16px 35px 20px 35px;
     }
 

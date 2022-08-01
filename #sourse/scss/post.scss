@@ -1217,7 +1217,7 @@
     margin-bottom: 20px;
 }
 
-.postmiansectbody__post ol {
+.postmiansectbody__post> ol {
     list-style: none;
     counter-reset: my-awesome-counter;
     padding-left: 10px;
@@ -1347,4 +1347,184 @@
             padding-left: 0;
         }
     }
+}
+
+
+// 01.08
+.posttablewrapper table td {
+    ul, ol {
+        padding-left: 18px;
+    }
+}
+
+.postmiansect__img {
+    display: flex;
+    align-items: center;
+}
+
+.blogsocials {
+    margin-top: 35px;
+}
+
+@media(min-width:1025px) {
+    .postbox-col:not(.w-100) {
+        .postbox {
+            position: relative;
+            height: 437px;
+            overflow: hidden;
+            
+    
+            .postbox__body-top {
+                padding: 16px 40px 0 40px;
+            }
+    
+            .postbox__bottsect {
+                padding: 0 40px 30px 40px;
+            }
+    
+            &:hover {
+                .postbox__body {
+                    height: 100%;
+                }
+    
+                .descrtext {
+                    opacity: 1;
+                }
+            }
+        }
+    
+        .postbox .postbox__body {
+            bottom: 0;
+            width: 100%;
+            height: calc(100% - 158px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.5s;
+            position: absolute;
+        }
+    
+        .postbox .descrtext {
+            font-size: 16px;
+            line-height: 140%;
+        }
+    
+        .postbox .title {
+            margin-bottom: 0;
+            height: auto;
+        }
+    
+        .postbox .descrtext {
+            opacity: 0;
+            transition: 0.5s;
+            padding-top: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    
+        .postbox__body-top {
+            height: calc(100% - 60px);
+        }
+    
+        .postbox .postbox__bottsect {
+            background: #fff;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+@media(max-width:1024.8px) {
+    .postbox-col:not(.w-100) .postbox .descrtext {
+        display: none;
+    }
+}
+
+
+
+
+@media(max-width:1400.8px) {
+    .postbox-col:not(.w-100) .postbox .postbox__body-top {
+        padding: 10px 20px 0 20px;
+    }
+
+    .postbox-col:not(.w-100) .postbox .postbox__bottsect {
+        padding: 0 20px 10px 20px;
+    }
+
+    .postbox-col:not(.w-100) .postbox__body-top {
+        height: calc(100% - 40px);
+    }
+}
+
+@media(max-width:991.8px) {
+    .descrtext {
+       display: none;
+    }
+}
+
+@media(max-width:575.8px) {
+    .postbox-col:not(.w-100) .postbox .postbox__body-top {
+        padding: 16px 35px 0 35px;
+    }
+
+    .postbox-col:not(.w-100) .postbox .postbox__bottsect {
+        padding: 0 35px 20px 35px;
+    }
+
+    .postbox-col:not(.w-100) .postbox__body-top {
+        height: calc(100% - 50px);
+    }
+    
+    .postbox-col:not(.w-100) .postbox .postbox__body {
+        height: calc(100% - 120px);
+    }
+
+    .postbox-col:not(.w-100) .postbox {
+        height: 330px;
+    }
+
+    .postbox .title {
+        -webkit-line-clamp: 3;
+    }
+
+    .postbox-col:not(.w-100) .postbox .descrtext {
+        -webkit-line-clamp: 4;
+    }
+
+    .postreadreview .postreadreview__link{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .postreadreview:before {
+       display: none;
+    }
+
+    .postreadreview h2 {
+        max-width: 100%;
+        padding-right: 100px;
+        position: relative;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            width: 100px;
+            height: 100px;
+            background-image: url(../images/new/subscribe-pic.png);
+            background-size: contain;
+            z-index: 2;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+
+    
 }
