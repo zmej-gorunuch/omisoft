@@ -575,6 +575,11 @@
                 font-weight: 700;
             }
 
+            .page-numbers:hover {
+                background: #E7EAEC;
+                color: #000;
+            }
+
             &.active {
                 a {
                     background: #E7EAEC;
