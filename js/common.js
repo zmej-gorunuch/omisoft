@@ -218,7 +218,7 @@
 
 
 	// page progress bar
-	if ($('.progress-bar').length) {
+	if ($('.progress-bar').length > 0) {
 		window.onscroll = function () {
 			myFunction()
 		};
@@ -233,34 +233,94 @@
 
 
 
-	if ($('.header__message')) {
+	if ($('.supua').length > 0) {
 		$('header.fixed').addClass('support');
 		$('.progress-container').addClass('support');
 	}
 
 	if ($(document).scrollTop() > 1) {
-		$('.header__message').addClass('hide');
+		$('.supua').addClass('hide');
 		$('header.fixed').removeClass('support');
 		$('.progress-container').removeClass('support');
 	}
 	else {
-		$('.header__message').removeClass('hide');
+		$('.supua').removeClass('hide');
 		$('header.fixed').addClass('support');
 		$('.progress-container').addClass('support');
 	}
 
     $(window).scroll(function() {
         if ($(document).scrollTop() > 1) {
-			$('.header__message').addClass('hide');
+			$('.supua').addClass('hide');
 			$('header.fixed').removeClass('support');
 			$('.progress-container').removeClass('support');
         }
         else {
-			$('.header__message').removeClass('hide');
+			$('.supua').removeClass('hide');
 			$('header.fixed').addClass('support');
 			$('.progress-container').addClass('support');
         }
     });
+
+	// 02.08
+
+ // tabs
+ $('.tabsheader__btn').click(function (e) {
+	// e.preventDefault();
+	$('.tabsheader__btn').removeClass('active');
+	$(this).addClass('active');
+});
+
+$('.tabsheader__btn.btn1').click(function () {
+	$('.tabsbody__tabcontent').addClass('hide');
+	$('.tabsbody__tabcontent.tbcont1').removeClass('hide');
+});
+
+$('.tabsheader__btn.btn2').click(function () {
+	$('.tabsbody__tabcontent').addClass('hide');
+	$('.tabsbody__tabcontent.tbcont2').removeClass('hide');
+});
+
+$('.tabsheader__btn.btn3').click(function () {
+	$('.tabsbody__tabcontent').addClass('hide');
+	$('.tabsbody__tabcontent.tbcont3').removeClass('hide');
+});
+
+
+
+if ($('textarea').length) {
+	var textarea = document.querySelector('textarea');
+
+	textarea.addEventListener('keyup', function () {
+		if (this.scrollTop > 0) {
+			this.style.height = this.scrollHeight + "px";
+		}
+	});
+}
+
+$(document).on('change', ':file', function () {
+	var input = $(this),
+		numFiles = input.get(0).files ? input.get(0).files.length : 1,
+		label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+	input.trigger('fileselect', [numFiles, label]);
+});
+
+$(document).ready(function () {
+	$(':file').on('fileselect', function (event, numFiles, label) {
+		$('label span text').text(label);
+		$('label span').addClass('active');
+	});
+
+});
+
+
+
+
+
+
+
+
+
 
 
 }(jQuery));

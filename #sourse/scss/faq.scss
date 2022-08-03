@@ -1,0 +1,637 @@
+.fqsection {
+    background: linear-gradient(180deg, #0F0F10 0%, #000000 0.01%, #0F0F10 100%);
+    position: relative;
+    padding: 140px 0 220px;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/postgrain.png);
+        z-index: 1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../images/postgrid.png) no-repeat top center/100%;
+        width: 100%;
+        height: 100%;
+    }
+
+    p.faqsubtitle {
+        background: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-bottom: 17px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 130%;
+        letter-spacing: 0.05em;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 185px;
+    }
+}
+
+.faqformwrapper {
+    position: relative;
+    padding: 0 87px;
+    z-index: 5;
+
+    .faqformsection {
+        background: #fff;
+        padding: 122px 116px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        .faqformsection__left {
+            width: 100%;
+            max-width: 52%;
+            flex: 0 0 52%;
+            padding-top: 80px;
+            padding-bottom: 110px;
+
+            h2 {
+                color: #010101;
+                font-weight: 800;
+                font-size: 56px;
+                line-height: 135%;
+                margin: 0;
+                max-width: 550px;
+            }
+        }
+
+        .faqformsection__right {
+            width: 100%;
+            max-width: 48%;
+            flex: 0 0 48%;
+        }
+    }
+}
+
+.tabsheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 6px;
+    margin-bottom: 80px;
+
+    .tabsheader__btn {
+        color: #1F1F1F;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 114%;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0px;
+            background: #C9FA3D;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            transition: 0.5s;
+        }
+
+        &.active {
+            font-weight: 700;
+            line-height: 114%;
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.inputfielf {
+    position: relative;
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 20px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        height: 42px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(#0A0A0A, 0.5);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: #0A0A0A;
+        font-family: 'Montserrat', sans-serif;
+
+        &::placeholder {
+            color: #0A0A0A;
+            opacity: 0.5;
+        }
+    }
+
+    textarea {
+        padding-top: 10px;
+        resize: none;
+        overflow: hidden;
+    }
+
+    .errormess {
+        color: #FF1D1D;
+        opacity: 0.9;
+        letter-spacing: 0.02em;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 130%;
+        position: absolute;
+        top: calc(100% + 2px);
+    }
+
+}
+
+.file-uploadlabel {
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    height: auto;
+    width: 100%;
+    color: rgba(#0A0A0A, 0.5);
+    border: none;
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+
+    input {
+        display: none;
+    }
+
+    svg {
+        vertical-align: middle;
+        margin-top: -5px;
+    }
+
+    span.active {
+        color: #0A0A0A;
+
+        svg {
+            path {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#bookform .submformbtn {
+    margin-top: 30px;
+    padding: 22px 44px;
+    background: #C9FA3D;
+    color: #0F0F10;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    border: none;
+    max-width: 300px;
+    width: 100%;
+}
+
+.tabsbody__tabcontent.hide {
+    display: none;
+}
+
+.bookacall {
+    text-align: center;
+    padding-left: 30px;
+
+    .picwrap {
+        width: 73px;
+        height: 73px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 33px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .userdescr {
+        .name {
+            color: #1F1F1F;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 130%;
+            margin-bottom: 5px;
+        }
+
+        .proff {
+            color: #0A0A0A;
+            opacity: 0.5;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            margin-bottom: 43px;
+        }
+    }
+}
+
+.calnowbtn {
+    background: #C9FA3D;
+    width: 300px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0F0F10;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    margin: 0 auto;
+}
+
+.sayhi {
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        max-width: 300px;
+        margin: 0 auto;
+
+        li {
+            margin-bottom: 37px;
+            padding-left: 77px;
+            position: relative;
+            text-align: left;
+
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: #010101;
+                font-size: 20px;
+                line-height: 114%;
+            }
+
+            &::after {
+                content: '';
+                display: inline-block;
+                height: 30px;
+                width: 30px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            &.phone::after {
+                background: url('../images/tel-icon.svg') no-repeat center / 100%;
+            }
+
+            &.email::after {
+                background: url('../images/telegram-icon.svg') no-repeat center / 100%;
+            }
+
+            &.tg::after {
+                background: url('../images/mail-icon.svg') no-repeat center / 100%;
+            }
+        }
+    }
+}
+
+.fqsection {
+    font-family: "Montserrat",sans-serif;
+}
+.file-uploadlabel svg {
+    margin-top: 0;
+}
+
+#bookform .submformbtn {
+    cursor: pointer;
+}
+
+@media(max-width:1600.8px) {
+    .fqsection {
+        padding: 100px 0 120px;
+    }
+
+    .fqsection h1 {
+        margin-bottom: 100px;
+        font-size: 60px;
+    }
+
+    .fqsection p.faqsubtitle {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left h2 {
+        font-size: 42px;
+        max-width: 450px;
+    }
+
+    .faqformwrapper .faqformsection {
+        padding: 100px;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left {
+        max-width: 45%;
+        flex: 0 0 45%;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__right {
+        max-width: 55%;
+        flex: 0 0 55%;
+    }
+
+    .tabsheader {
+        margin-bottom: 60px;
+    }
+
+    #bookform .submformbtn {
+        max-width: 270px;
+        font-size: 16px;
+        padding: 20px 20px;
+        margin-top: 20px;
+    }
+
+    .calnowbtn {
+        font-size: 16px;
+        height: 60px;
+        width: 270px;
+    }
+
+    .bookacall .userdescr .proff {
+        margin-bottom: 30px;
+    }
+
+    .sayhi {
+        padding-top: 30px;
+    }
+
+    .sayhi ul li {
+        padding-left: 60px;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left {
+        padding-right: 50px;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left {
+        min-height: 450px;
+        padding-bottom: 0;
+    }
+
+
+
+    .tabsheader .tabsheader__btn {
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+
+    .faqformwrapper .faqformsection {
+        padding: 80px 60px;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left h2 {
+        font-size: 36px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:1199.8px) {
+
+    .faqformwrapper .faqformsection .faqformsection__left,
+    .faqformwrapper .faqformsection .faqformsection__right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left h2 {
+        max-width: 100%;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left {
+        margin-bottom: 50px;
+    }
+
+    .faqformwrapper .faqformsection {
+        padding: 60px;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left {
+        min-height: initial;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+
+    .faqformwrapper {
+        padding: 0 80px;
+    }
+
+    .fqsection {
+        padding: 70px 0 80px;
+    }
+
+    .fqsection h1 {
+        font-size: 42px;
+        margin-bottom: 50px;
+    }
+
+    .faqformwrapper .faqformsection {
+        padding: 40px 40px 60px 40px;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left h2 {
+        font-size: 34px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+    .faqformwrapper {
+        padding: 0 30px;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left h2 {
+        font-size: 28px;
+    }
+
+
+
+
+}
+
+@media(max-width:575.8px)  {
+    .fqsection {
+        padding: 40px 0;
+    }
+
+    .fqsection p.faqsubtitle {
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 5px;
+    }
+
+    .fqsection h1 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .faqformwrapper {
+        padding: 0 15px;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left {
+        padding-right: 0;
+    }
+
+    .faqformwrapper .faqformsection .faqformsection__left h2 {
+        font-size: 21px;
+    }
+
+    .faqformwrapper .faqformsection {
+        padding: 20px 20px 30px 20px;
+    }
+
+    .tabsheader .tabsheader__btn {
+        font-size: 14px;
+    }
+
+    .tabsheader {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .inputfielf input, .inputfielf textarea {
+        font-weight: 500;
+    }
+
+    .inputfielf {
+        margin-bottom: 30px;
+    }
+
+    #bookform .submformbtn {
+        max-width: 100%;
+    }
+
+    .tabsheader {
+        margin-bottom: 40px;
+    }
+
+    .bookacall {
+        padding-left: 0;
+    }
+
+    .bookacall .picwrap {
+        margin-bottom: 20px;
+    }
+
+    .bookacall .userdescr .name {
+        font-size: 18px;
+    }
+
+    .sayhi ul li a {
+        font-size: 18px;
+    }
+
+    .sayhi ul li:after {
+        top: -2px;
+    }
+
+    .sayhi ul li {
+        padding-left: 50px;
+    }
+
+
+
+}
+
+
+@media(max-width:360.8px) {
+
+    .tabsheader .tabsheader__btn {
+        text-align: center;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .calnowbtn {
+        width: 100%;
+    }
+}
