@@ -547,7 +547,7 @@
         li {
             margin: 0 7px;
 
-            a {
+            a, span {
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 200%;
@@ -558,15 +558,28 @@
                 justify-content: center;
                 width: 28px;
                 height: 36px;
+                font-family: 'Montserrat';
 
+                
+            }
+
+            a {
                 &:hover {
-                    opacity: 0.7;
+                    background: #E7EAEC;
                 }
+            }
+
+            span.page-numbers.current {
+                background: #E7EAEC;
+                color: #000;
+                font-weight: 700;
             }
 
             &.active {
                 a {
                     background: #E7EAEC;
+                    color: #000;
+                    font-weight: 700;
                 }
             }
         }
