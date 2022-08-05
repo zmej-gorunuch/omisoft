@@ -1042,7 +1042,9 @@
 
 
 
-
+.service-postbox .postbox__wrapper .hirebox a {
+    z-index: 1;
+}
 
 
 
@@ -1050,3 +1052,4 @@
 
 
 // font-family: 'Montserrat', sans-serif;
+
