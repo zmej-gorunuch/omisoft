@@ -324,3 +324,12 @@ $(document).ready(function () {
 
 
 }(jQuery));
+  /* <a href="contacts.html#sectab" class="extra-tab">link</a> */
+document.addEventListener("DOMContentLoaded", function () {
+    if ('#sectab' === window.location.hash) {
+        $('.tabsbody__tabcontent').addClass('hide');
+        $('.tabsbody__tabcontent.tbcont2').removeClass('hide');
+        $('.tabsheader__btn').removeClass('active');
+        $('.tabsheader__btn.btn2').addClass('active');
+    }
+});
