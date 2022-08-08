@@ -1,0 +1,74 @@
+.service-welcomesection__link.abus {
+    width: auto;
+    display: inline-block;
+    min-height: initial;
+    padding: 22px 44px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.service-welcomesection.abus {
+    .service-welcomesection__ratedsection {
+        padding-bottom: 20px;
+    }
+}
+// -----------------------------
+.gridbg {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(100% - 75px);
+        height: 100%;
+        display: block;
+        background: radial-gradient(54.07% 52.6% at 36.53% 34.34%,#0D0D0E 44.21%,rgba(32,29,29,0) 100%);
+        opacity: 0.8;
+        -webkit-filter: blur(32px);
+        filter: blur(32px);
+        z-index: 2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/grain.png),url(../images/grid.png);
+        background-repeat: no-repeat,no-repeat;
+        background-size: 100% auto,100% auto;
+        background-position: 0 0,0 -2px;
+        z-index: 1;
+    }
+}
+.abussectitle {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 135%;
+    color: #fff;
+    font-family: "Montserrat",sans-serif;
+}
+.abuswhoweare {
+    padding: 200px 0 20px;
+    
+    h2 {
+        margin-bottom: 70px;
+    }
+}
+
+.wwabox {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 94px 78px;
+    background: rgba(15, 15, 16, 0.9);
+    border: 1px solid rgba(140, 255, 172, 0.2);
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.46);
+    border-radius: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}

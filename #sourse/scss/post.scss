@@ -1,5 +1,5 @@
 .postwrapper {
-    padding: 96px 0 0 0;
+    // padding: 96px 0 0 0;
     background: #fff;
     font-family: "Montserrat",sans-serif;
 }
@@ -1268,9 +1268,9 @@
     .postmiansectbody__post h4 {
         font-size: 24px;
     }
-    .progress-container.support {
-        top: 176px;
-    }
+    // .progress-container.support {
+    //     top: 176px;
+    // }
 }
 
 @media(max-width:767.8px) {
@@ -1285,6 +1285,10 @@
     .codeexample {
         display: block;
         overflow: auto;
+    }
+
+    .progress-container.support {
+        top: 154px;
     }
 }
 
