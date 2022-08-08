@@ -335,3 +335,52 @@ document.addEventListener("DOMContentLoaded", function () {
         $('.tabsheader__btn.btn2').addClass('active');
     }
 });
+
+
+
+
+
+
+// CHART
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+	['Task', 'Tech Stack'],
+	['React Native',     25],
+	['Flutter',      15],
+	['React.js',  20],
+	['Node.js', 20],
+	['Product Design',    20]
+  ]);
+
+  var options = {
+	// title: 'My Daily Activities',
+	pieHole: 0.6,
+	backgroundColor: { 
+		fill:'transparent',
+	},
+	legend: { position: 'none' },
+	colors: ['#B0FF07', '#04A5FF', '#FF5A91', '#CA59FF', '#FFF500'],
+	pieSliceTextStyle: {
+		color: 'black',
+		fontName: 'Montserrat',
+		fontSize: 20,
+		bold: true
+	},
+
+    // pieSliceText: 'label',
+
+	'width':420,
+	'height':420,
+	chartArea: { width: "90%", height: "90%" },
+	// 'tooltip' : {
+	// 	trigger: 'none'
+	//   }
+  };
+  
+
+  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+  chart.draw(data, options);
+}

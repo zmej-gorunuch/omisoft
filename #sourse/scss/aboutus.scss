@@ -48,8 +48,8 @@
 }
 .abussectitle {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 135%;
+    font-size: 80px;
+    line-height: 120%;
     color: #fff;
     font-family: "Montserrat",sans-serif;
 }
@@ -71,4 +71,225 @@
     border-radius: 24px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+
+    .wwabox__descr {
+        width: 100%;
+        max-width: calc(100% - 196px);
+        flex: 0 0 calc(100% - 196px);
+        padding-right: 54px;
+
+        p {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 200%;
+            color: #fff;
+            font-family: "Montserrat",sans-serif;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            span {
+                background: linear-gradient(125.34deg,#CDFF7C 14.35%,#8CFFAC 54.63%,#93FFEB 101.27%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    .wwabox__img {
+        width: 100%;
+        max-width: 196px;
+        flex: 0 0 196px;
+    }
 }
+
+// -----------------------------
+
+.abusdev {
+    padding: 200px 0 230px;
+
+    h2 {
+        margin-bottom: 129px;
+    }
+}
+
+.devsuccess {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1225px;
+    margin: 0 auto;
+}
+
+.devsuccess__box {
+    width: calc(50% - 42px);
+}
+
+.devsuccess__box-list {
+    padding: 50px 50px 85px 50px;
+    background: #141415;
+    border: 0.5px solid;
+    border-image-slice: 0.5;
+    border-width: 0.5px;
+    border-image-source: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
+    border-bottom: none;
+
+    .title {
+        margin-bottom: 24px;
+        color: #fff;
+        letter-spacing: 0.02em;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        font-family: "Montserrat",sans-serif;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+
+        li {
+            color: #fff;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130%;
+            font-family: "Montserrat",sans-serif;
+            display: block;
+            padding-bottom: 20px;
+            position: relative;
+            padding-left: 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &::after {
+                content: '';
+                display: inline-block;
+                border-radius: 50%;
+                width: 12px;
+                height: 12px;
+                background: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
+                position: absolute;
+                left: 0;
+                top: 6px;
+            }
+
+            &::before {
+                content: '';
+                width: 2px;
+                height: calc(100%);
+                background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+                opacity: 0.5;
+                position: absolute;
+                left: 5px;
+                top: 8px;
+            }
+        }
+    }
+}
+
+.devsuccess__box-link {
+    a {
+        height: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.3s;
+        background: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
+        color: #0F0F10;
+        letter-spacing: 0.02em;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        font-family: "Montserrat",sans-serif;
+    }
+}
+
+.devsuccess__box.lightgreen {
+
+    .devsuccess__box-list {
+        border-image-source: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
+    }
+    
+    .devsuccess__box-list ul li:after {
+        background: #C9FA3D;
+    }
+
+    .devsuccess__box-link a {
+        background: #C9FA3D;
+    }
+}
+
+// -----------------------------
+
+.abustechstack {
+    padding: 120px 0 70px;
+    h2 {
+        margin-bottom: 125px;
+    }
+}
+
+.abustechstack__descr {
+    max-width: 690px;
+    margin: 0 auto;
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 200%;
+        color: #fff;
+        font-family: "Montserrat",sans-serif;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            background: linear-gradient(125.34deg,#CDFF7C 14.35%,#8CFFAC 54.63%,#93FFEB 101.27%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.chartwrapper {
+    max-width: 1002px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    .chartwrapper__colchart {
+        width: 100%;
+        max-width:420px;
+        flex: 0 0 420px;
+    }
+
+    .chartwrapper__collables {
+        width: 100%;
+        max-width: calc(100% - 420px);
+        flex: 0 0 calc(100% - 420px);
+    }
+}
+
+.donutchartwr {
+   text-align: right;
+}
+
+
+
+
+
+
+
+
+// font-family: "Montserrat",sans-serif;
