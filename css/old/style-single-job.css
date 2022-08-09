@@ -930,6 +930,9 @@
     margin-right: 0
 }
 
+
+
+
 .styles_page__iIb4C {
     padding-top: 100px;
 }
@@ -945,4 +948,28 @@
 .styles_career_holder__form_inner__2Yr4L,
 .styles_career_holder__form_inner__2Yr4L {
     padding: 0 !important;
+}
+
+.styles_career_holder__form__iW9sg {
+    position: relative !important;
+    top: 0 !important;
+    z-index: 1 !important;
+
+}
+@media(max-width:767.8px) {
+    .styles_career_holder__form__iW9sg {
+        padding: 40px 20px 100px !important;
+    }
+}
+
+@media(max-width:575.8px) {
+    .styles_career_holder__form__iW9sg {
+        BACKGROUND: #f1f1f1;
+    }
+
+    .styles_career_holder__form__iW9sg:after {
+        display: none;
+    }
+
+
 }
