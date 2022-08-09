@@ -56,8 +56,17 @@ header.header {
                     z-index: 1;
                     transition: 0.3s;
 
+                    background: linear-gradient(to right, white, white 50%, coral 55%, aquamarine);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-size: 200% 100%;
+                    background-position: 0%;
+                    transition: background-position 0.42s ease;
+
                     &:hover {
-                        color: #C9FA3D;
+                        // color: #C9FA3D;
+                        background-position: 100%;
                     }
                 }
 
