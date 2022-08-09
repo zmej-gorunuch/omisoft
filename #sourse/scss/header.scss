@@ -56,11 +56,11 @@ header.header {
                     z-index: 1;
                     transition: 0.3s;
 
-                    background: linear-gradient(to right, white, white 50%, coral 55%, aquamarine);
+                    background: linear-gradient(to right, white, white 50%, #8CFFAC  55%, #93FFEB );
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    background-size: 200% 100%;
+                    background-size: 220% 100%;
                     background-position: 0%;
                     transition: background-position 0.42s ease;
 
@@ -245,8 +245,21 @@ header.header.header__white {
         a {
             color: #212121;
 
+          
+
+        }
+
+        &>a {
+            background: linear-gradient(to right, #212121, #212121 50%, #8CFFAC  55%, #93FFEB );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 220% 100%;
+            background-position: 0%;
+            transition: background-position 0.42s ease;
+
             &:hover {
-                color: #bbbbbb;
+                background-position: 100%;
             }
         }
 
