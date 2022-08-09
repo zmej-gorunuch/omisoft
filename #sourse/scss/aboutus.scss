@@ -235,7 +235,11 @@
 .abustechstack {
     padding: 120px 0 70px;
     h2 {
-        margin-bottom: 125px;
+        margin-bottom: 0;
+    }
+
+    .titdescrcol {
+        margin-bottom: 194px;
     }
 }
 
@@ -245,7 +249,7 @@
 
     p {
         font-weight: 500;
-        font-size: 18px;
+        font-size: 22px;
         line-height: 200%;
         color: #fff;
         font-family: "Montserrat",sans-serif;
@@ -262,31 +266,29 @@
     }
 }
 
-.chartwrapper {
-    max-width: 1002px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+.abustechstack__descr {
+    padding-top: 75px;
+}
 
-    .chartwrapper__colchart {
+.titdescrcol {
+    .abustechstack__title {
         width: 100%;
-        max-width:420px;
-        flex: 0 0 420px;
+        max-width: 64%;
+        flex: 0 0 64%;
     }
-
-    .chartwrapper__collables {
+    .abustechstack__descr {
         width: 100%;
-        max-width: calc(100% - 420px);
-        flex: 0 0 calc(100% - 420px);
+        max-width: 36%;
+        flex: 0 0 36%;
     }
 }
 
-.donutchartwr {
-   text-align: right;
+.abustechstack  {
+    h2 {
+        font-size: 72px;
+        line-height: 130%;
+    }
 }
-
-
-
 
 
 
