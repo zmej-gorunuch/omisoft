@@ -234,6 +234,10 @@ header.header.header__white {
 
         a {
             color: #212121;
+
+            &:hover {
+                color: #bbbbbb;
+            }
         }
 
     }
@@ -452,6 +456,10 @@ div {
 
         a {
             color: #fff;
+
+            &:hover {
+                color: #C9FA3D;
+            }
         }
     }
     .header__message p {
