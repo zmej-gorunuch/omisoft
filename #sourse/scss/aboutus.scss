@@ -459,9 +459,13 @@
     padding: 0 20px;
 }
 
+.dropusanotelink a img {
+    transition: 0.3s;
+}
 
-
-
+.dropusanotelink a:hover img {
+    transform: translate(10px, -10px);
+}
 
 
 
@@ -721,7 +725,10 @@
         margin-top: 30px;
     }
 
-
+    .dropusanotelink a:hover img {
+        transform: translate(5px, -5px);
+    }
+    
 
 
 
