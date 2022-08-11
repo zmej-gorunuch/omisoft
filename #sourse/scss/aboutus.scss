@@ -849,7 +849,7 @@
     }
     
     .service-testimonials .testimonialslider-abus .slick-slide {
-        width: 100%!important;
+        width: calc(100% - 2px) !important;
         padding: 0;
     }
 
