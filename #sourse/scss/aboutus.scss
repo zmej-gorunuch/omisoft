@@ -440,16 +440,60 @@
         color: #fff;
         font-family: "Montserrat",sans-serif;
 
+        span {
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                height: 2px;
+                width: 0;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                background: #fff;
+                transition: 0.3s;
+            }
+        }
+
         img {
             vertical-align: middle;
             margin-top: -5px;
         }
 
         &:hover {
-            color: #C9FA3D;
+            // color: #C9FA3D;
+
+            span {
+                &::after {
+                    width: 100%;
+                }
+            }
+            
+            img {
+                animation: footlink 1s infinite;
+                -webkit-animation: footlink 1s infinite;
+            }
         }
     }
 }
+
+@keyframes footlink{
+    0%{
+        -webkit-transform:translate(0,0);transform:translate(0,0)
+    }
+    70%{
+        -webkit-transform:translate(15px,-15px);transform:translate(15px,-15px)
+    }
+    100% {
+        -webkit-transform:translate(0,0);transform:translate(0,0)
+    }
+}
+
+
+
+
 
 .servtestim__header-right.mob {
     display: none;
@@ -460,14 +504,12 @@
 }
 
 .dropusanotelink a img {
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-.dropusanotelink a:hover img {
-    transform: translate(10px, -10px);
+.styles_create_container__1i8iu .styles_home_content__1lxu3 {
+    padding-top: 100px;
 }
-
-
 
 
 
@@ -634,7 +676,9 @@
         margin-top: 50px;
     }
 
-
+    .styles_create_container__1i8iu .styles_home_content__1lxu3 {
+        padding-top: 70px;
+    }
 
 
 
@@ -725,11 +769,21 @@
         margin-top: 30px;
     }
 
-    .dropusanotelink a:hover img {
-        transform: translate(5px, -5px);
+    @keyframes footlink{
+        0%{
+            -webkit-transform:translate(0,0);transform:translate(0,0)
+        }
+        70%{
+            -webkit-transform:translate(10px,-10px);transform:translate(10px,-10px)
+        }
+        100% {
+            -webkit-transform:translate(0,0);transform:translate(0,0)
+        }
     }
     
-
+    .styles_create_container__1i8iu .styles_home_content__1lxu3 {
+        padding-top: 50px;
+    }
 
 
 
@@ -740,6 +794,8 @@
         font-size: 42px;
     }
 }
+
+
 
 @media(max-width:575.8px) {
 
@@ -896,7 +952,9 @@
         padding-top: 40px;
     }
 
-
+    .styles_create_container__1i8iu .styles_home_content__1lxu3 {
+        padding-top: 0;
+    }
 
 
 
