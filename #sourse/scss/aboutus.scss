@@ -479,6 +479,45 @@
     }
 }
 
+.service-postbox .postbox__wrapper .hirebox a {
+    color: #fff !important;
+    span {
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 0;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            background: #fff;
+            transition: 0.3s;
+        }
+    }
+
+    img {
+        vertical-align: middle;
+        margin-top: -5px;
+    }
+
+    &:hover {
+
+        span {
+            &::after {
+                width: 100%;
+            }
+        }
+        
+        img {
+            animation: footlink 1s infinite;
+            -webkit-animation: footlink 1s infinite;
+        }
+    }
+}
+
 @keyframes footlink{
     0%{
         -webkit-transform:translate(0,0);transform:translate(0,0)
