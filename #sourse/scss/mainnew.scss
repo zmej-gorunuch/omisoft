@@ -127,8 +127,9 @@
     }
    
 }
-
 .welcomesection__bottcont a {
+}
+.welcomesection__bottcont a:not(:last-child) {
     position: relative;
     height: 80px;
     width: 95px;
@@ -136,7 +137,13 @@
     align-items: center;
     justify-content: center;
 }
-
+.welcomesection__bottcont a:last-child {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+}
 .defaultimg {
     opacity: 0.6;
 }
@@ -173,16 +180,19 @@
         margin-top: 0;
     }
 
-    .welcomesection__bottcont a img {
+    .welcomesection__bottcont a:not(:last-child) img {
         max-height: 60px;
     }
 
-    .welcomesection__bottomsect a {
+    .welcomesection__bottcont a:not(:last-child)  {
         margin-right: 30px;
     }
 
-    .welcomesection__bottcont a {
+    .welcomesection__bottcont a:not(:last-child)  {
         width: 60px;
+        height: 60px;
+    }
+    .welcomesection__bottcont a:last-child {
         height: 60px;
     }
 }
@@ -259,10 +269,13 @@
         object-position: 90% 50%;
     }
 
-    .welcomesection__bottcont a img {
+    .welcomesection__bottcont a:not(:last-child) img {
         max-height: 53px;
     }
 
+    .welcomesection__bottcont a:not(:last-child) {
+        margin-right: 10px;
+    }
 
 }
 
