@@ -483,8 +483,6 @@
 
 
 
-
-
 @media(min-width:1900px) {
 
     .dropusanote.newmain {
@@ -518,7 +516,26 @@
     }
 
 }
-
+@media(min-width:1500px) {
+    .lateststories.newmain {
+        .blog__body.fourinrow {
+            max-width: 1536px;
+            margin: 0 auto;
+        }
+    
+        .postbox-col:not(.w-100) .postbox .postbox__body-top,
+        .postbox-col:not(.w-100) .postbox .postbox__bottsect {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    
+        .postbox-col:not(.w-100) .postbox {
+            height: 466px;
+        }
+    }
+    
+    
+}
 
 @media(max-width:1600.8px) {
     .welcomesection__title {
