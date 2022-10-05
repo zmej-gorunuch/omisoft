@@ -516,6 +516,7 @@
     }
 
 }
+
 @media(min-width:1500px) {
     .lateststories.newmain {
         .blog__body.fourinrow {
@@ -535,6 +536,13 @@
     }
     
     
+}
+
+@media(max-width:1800px) {
+    .devservivesbox {
+        width: calc(25% - 15px);
+        max-width: 100%;
+    }
 }
 
 @media(max-width:1600.8px) {
