@@ -4,6 +4,11 @@
         right: -20px;
     }
 
+    .service-whatwedo .devservices .badgelink {
+        bottom: -140px;
+        right: -20px;
+    }
+
 }
 
 @media(max-width:1600.8px) {
@@ -222,7 +227,12 @@
         font-size: 16px;
     }
 
-
+    .service-whatwedo .devservices .badgelink {
+        width: 300px;
+        height: 160px;
+        bottom: -80px;
+        right: 10px;
+    }
 
 
 
@@ -620,7 +630,14 @@
         margin-right: 15px;
     }
 
-
+    .service-whatwedo .devservices .badgelink {
+        width: 200px;
+        height: 110px;
+        bottom: 0;
+        right: 10px;
+        max-width: 100%;
+        max-height: 100%;
+    }
 
 
 
@@ -925,7 +942,12 @@
         line-height: 130%;
     }
 
-
+    .service-whatwedo .devservices .badgelink {
+        position: relative;
+        right: 0;
+        margin: 30px auto 0;
+        display: block;
+    }
 
 
 
