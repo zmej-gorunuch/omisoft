@@ -369,7 +369,14 @@
     }
 }
 
+.sayhi ul li a {
+    display: block;
+    margin-bottom: 10px;
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
 
 
 
