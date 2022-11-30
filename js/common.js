@@ -428,3 +428,17 @@ document.addEventListener("DOMContentLoaded", function () {
 		$('.tabsheader__btn.btn2').addClass('active');
 	}
 });
+
+
+
+// 30.11
+$('.header__language span').click(function(){
+	$('.langlist').toggle();
+});
+
+$(document).click(function (event) {
+	let $target = $(event.target);
+	if (!$target.closest('.header__language').length) {
+		$('.langlist').hide();
+	}
+});
