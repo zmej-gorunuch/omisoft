@@ -1,0 +1,79 @@
+// about-us-new.html
+
+.aboutusn-whoweare,
+.aboutusn-techstack,
+.service-workin.aboutusn,
+.service-testimonials,
+.service-testimonials.aboutusn,
+.fqsection {
+    background: transparent;
+
+    &::after, &::before {
+        display: none;
+    }
+}
+
+.service-welcomesection,
+.abuswhoweare,
+.abusdev,
+.gridbg,
+.service-workin,
+.service-postbox,
+.privacysect,
+.service-benefits,
+.service-whatwedo,
+.service-operate,
+.service-ourworks {
+    background: transparent !important;
+
+    &::after {
+        display: none;
+    }
+}
+
+.service-faq {
+    background-image: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.aboutusn-developing {
+    background-image: url(../images/homeupdate/without-noise.svg);
+    background-repeat: repeat;
+
+    :after {
+        display: none;
+    }
+}
+
+header.header.header__black
+ {
+    background-color: #0A0A0B;
+}
+
+.errorsection {
+    background: #0A0A0B;
+}
+
+.aboutusn-developing:after {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+// bodygridbg
