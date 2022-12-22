@@ -2710,10 +2710,6 @@ header.header.header__white .header__language {
         height: auto;
     }
 
-    .service-testimonials__hupd .testimonialslide .testimonialslide__photo {
-        display: none;
-    }
-
     .service-testimonials__hupd .testimonialslide .descr p {
         font-weight: 500;
         font-size: 14px;
@@ -2815,7 +2811,10 @@ header.header.header__white .header__language {
         padding-bottom: 170px;
     }
 
-
+    .service-testimonials__hupd.service-testimonials .testimonialslide {
+        margin-right: 1px;
+        padding-top: 20px;
+    }
 
 
 
