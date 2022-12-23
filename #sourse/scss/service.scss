@@ -1045,6 +1045,8 @@
     }
 }
 
+
+
 @media(min-width:767px) {
     .linepoints[data-point='4'] {
         width: 75% !important;
@@ -1063,8 +1065,17 @@
     z-index: 1;
 }
 
+.service-welcomesection {
+    text-align: center;
+}
+.service-welcomesection .service-welcomesection__link {
+    width: auto;
+    min-width: 340px;
+    padding: 3px 25px;
+    display: inline-flex;
+    margin: 0 auto;
 
-
+}
 
 
 
