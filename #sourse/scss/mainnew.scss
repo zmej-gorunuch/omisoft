@@ -1313,14 +1313,14 @@ header.header.header__white .header__language {
 
 @media(min-width:992px) {
     .header.header .header__nav {
-        max-width: calc(100% - 410px);
-        flex: 0 0 calc(100% - 410px);
+        max-width: calc(100% - 465px);
+        flex: 0 0 calc(100% - 465px);
         padding-left: 80px;
     }
 
     header.header .header__chat {
-        max-width: 245px;
-        flex: 0 0 245px;
+        max-width: 300px;
+        flex: 0 0 300px;
         display: flex;
         align-items: center;
         justify-content: space-between;
