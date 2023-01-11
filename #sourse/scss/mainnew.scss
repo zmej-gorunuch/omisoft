@@ -1815,7 +1815,7 @@ header.header.header__white .header__language {
 
 // ----/
 .hupd-clientfutured {
-    padding: 120px 0;
+    padding: 120px 0 90px;
 }
 
 .hupd-clientfutured__left {
@@ -1843,8 +1843,8 @@ header.header.header__white .header__language {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 118px;
+    justify-content: center;
+    padding-left: 50px;
 }
 
 .service-operate__hupd {
@@ -2116,8 +2116,11 @@ header.header.header__white .header__language {
     box-shadow: 0 0 150px #000;
 }
 
-.clientfutured__imgs img {
-    height: 36px;
+.clientfutured__imgs {
+    &>div {
+        margin: 0 40px;
+        margin-bottom: 30px;
+    }
 }
 
 .lateststories__header .lateststories__header-right {
@@ -2184,10 +2187,25 @@ header.header.header__white .header__language {
     .clientfutured__imgs {
         padding-left: 0;
 
-        img {
-            height: 30px;
+        &>div {
+            margin: 0 25px 25px 25px;
         }
 
+        img {
+            max-height: 70px;
+            max-width: 130px;
+        }
+
+    }
+
+    .hupd-clientfutured__left {
+        max-width: 300px;
+        flex: 0 0 300px;
+    }
+
+    .hupd-clientfutured__right {
+        max-width: calc(100% - 300px);
+        flex: 0 0 calc(100% - 300px);
     }
 
     .service-testimonials__hupd .testimonialslide {
@@ -2423,6 +2441,17 @@ header.header.header__white .header__language {
         padding-top: 120px;
     }
 
+    .clientfutured__imgs {
+        justify-content: space-around;
+
+        img {
+            max-width: initial;
+            max-height: initial;
+        }
+    }
+
+
+
 }
 
 @media(max-width:991.8px) {
@@ -2484,7 +2513,12 @@ header.header.header__white .header__language {
     .dropusanote.dropusanote__hupd {
         padding: 100px 0 80px;
     }
-
+    .clientfutured__imgs>div {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
 
 
 
