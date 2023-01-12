@@ -432,7 +432,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // 30.11
-$('.header__language span').click(function(){
+$('.header__language span').click(function () {
 	$('.langlist').toggle();
 });
 
@@ -441,4 +441,21 @@ $(document).click(function (event) {
 	if (!$target.closest('.header__language').length) {
 		$('.langlist').hide();
 	}
+});
+
+// 12.01 our clients - slider
+
+$('.clientfutured__imgs').slick({
+	variableWidth: true,
+	slidesToScroll: 1,
+	arrows: false,
+	infinite: true,
+	cssEase: 'linear',
+	autoplay: true,
+	autoplaySpeed: 10,
+	speed: 6000,
+	focusOnSelect: false,
+	swipeToSlide:false,
+	swipe:false,
+	touchMove: false,
 });
