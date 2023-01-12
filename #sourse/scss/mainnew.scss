@@ -2924,11 +2924,15 @@ header.header.header__white .header__language {
     transition: 0.3s;
 }
 // fff > gr
-header.header .header__language span {
+header.header .header__language span,
+.hupd-benefits__left .getproduct,
+.devservivessection.devservivessection__hupd .title {
     font-weight: 400;
     font-family: "Montserrat-Bold";
 }
-
+.dropusanote.dropusanote__hupd .dropusanotesect__content .dropusanotelink a span {
+    font-weight: 500 !important;
+}
 
 .devservivessection.devservivessection__hupd .title,
 .dropusanote .dropusanotelink a span,
