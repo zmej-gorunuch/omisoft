@@ -782,6 +782,26 @@
 
 }
 
+.service-testimonials__hupd .testimonialslide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-testimonials .testimonialslide .rating {
+    margin: 0 0 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:1800px) {
     .devservivesbox {
         width: calc(25% - 15px);
@@ -1712,7 +1732,7 @@ header.header.header__white .header__language {
 
 
 .hupd-benefits {
-    padding: 260px 0 90px;
+    padding: 105px 0 90px;
 }
 
 .flexrow {
@@ -1815,13 +1835,16 @@ header.header.header__white .header__language {
 
 // ----/
 .hupd-clientfutured {
-    padding: 120px 0 90px;
+    padding: 104px 0 110px;
 }
 
 .hupd-clientfutured__left {
     width: 100%;
-    max-width: 427px;
-    flex: 0 0 427px;
+    max-width: 304px;
+    flex: 0 0 304px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
 
     p {
         margin: 0;
@@ -1835,17 +1858,11 @@ header.header.header__white .header__language {
 
 .hupd-clientfutured__right {
     width: 100%;
-    max-width: calc(100% - 427px);
-    flex: 0 0 calc(100% - 427px);
+    max-width: calc(100% - 304px);
+    flex: 0 0 calc(100% - 304px);
 }
 
-.clientfutured__imgs {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-left: 50px;
-}
+
 
 .service-operate__hupd {
     padding: 218px 0 200px;
@@ -2116,16 +2133,46 @@ header.header.header__white .header__language {
     box-shadow: 0 0 150px #000;
 }
 
-.clientfutured__imgs {
-    &>div {
-        margin: 0 40px;
-        margin-bottom: 30px;
-    }
-}
-
 .lateststories__header .lateststories__header-right {
     text-align: right;
 }
+
+.clientfutured__imgs {
+    position: relative;
+    z-index: 2;
+
+    .slick-slide {
+        height: 87px;
+        display: inline-flex;
+        align-items: center;
+        margin: 0 50px;
+
+        img {
+            max-height: 100%;
+        }
+    }
+}
+
+.hupd-clientfutured__right {
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #131314, #131314);
+        filter: blur(60px);
+        z-index: 1;
+    }
+}
+
+
+
+
 
 
 
@@ -2184,20 +2231,6 @@ header.header.header__white .header__language {
         padding: 100px 0;
     }
 
-    .clientfutured__imgs {
-        padding-left: 0;
-
-        &>div {
-            margin: 0 25px 25px 25px;
-        }
-
-        img {
-            max-height: 70px;
-            max-width: 130px;
-        }
-
-    }
-
     .hupd-clientfutured__left {
         max-width: 300px;
         flex: 0 0 300px;
@@ -2222,7 +2255,7 @@ header.header.header__white .header__language {
     }
 
     .service-testimonials__hupd .testimonialslide {
-        height: 445px;
+        height: 470px;
     }
 
     .futuredclients h2 {
@@ -2441,14 +2474,7 @@ header.header.header__white .header__language {
         padding-top: 120px;
     }
 
-    .clientfutured__imgs {
-        justify-content: space-around;
 
-        img {
-            max-width: initial;
-            max-height: initial;
-        }
-    }
 
 
 
@@ -2473,13 +2499,6 @@ header.header.header__white .header__language {
     .welcomesection__bottcont-left {
         order: 2;
         margin-top: 30px;
-    }
-
-    .clientfutured__imgs>div {
-        width: 100%;
-        max-width: 50%;
-        flex: 0 0 50%;
-        margin-bottom: 30px;
     }
 
     .hupd-clientfutured {
@@ -2512,12 +2531,6 @@ header.header.header__white .header__language {
 
     .dropusanote.dropusanote__hupd {
         padding: 100px 0 80px;
-    }
-    .clientfutured__imgs>div {
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 30px;
-        text-align: center;
     }
 
 
@@ -2590,10 +2603,6 @@ header.header.header__white .header__language {
     .hupdbenefit-wrap {
         max-width: 100%;
         flex: 0 0 100%;
-    }
-
-    .clientfutured__imgs img {
-        max-width: 100%;
     }
 
 
@@ -2729,21 +2738,6 @@ header.header.header__white .header__language {
         margin: 0 auto 8px;
     }
 
-    .clientfutured__imgs img {
-        height: auto;
-    }
-
-    .clientfutured__imgs>div {
-        max-width: 100%;
-        flex: 0 0 100%;
-        text-align: center;
-        margin-bottom: 38px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
     .service-testimonials__hupd .testimonialslide {
         height: auto;
     }
@@ -2758,7 +2752,7 @@ header.header.header__white .header__language {
         margin-bottom: 8px;
     }
 
-    .service-testimonials__hupd .testimonialslide .descr .rating {
+    .service-testimonials__hupd .testimonialslide .rating {
         margin-top: 8px;
     }
 
@@ -2854,9 +2848,14 @@ header.header.header__white .header__language {
         padding-top: 20px;
     }
 
+    .clientfutured__imgs .slick-slide {
+        margin: 0 25px;
+    }
 
-
-
+    .service-welcomesection .service-welcomesection__link {
+        min-width: initial;
+        width: 100%;
+    }
 
 
 
@@ -2889,3 +2888,74 @@ header.header.header__white .header__language {
 
 
 // font-family: 'Montserrat';
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/FontsFree-Net-Montserrat-ExtraBold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.welcomesection__bottcont-left p a,
+.aboutus-welcomesect .gradientlink,
+.dropusanote.dropusanote__hupd .dropusanotesect__content .dropusanotelink a span,
+.hupd-benefits__left .getproduct {
+    // background: linear-gradient(125.34deg,white 50%, #CDFF7C 64.35%,#8CFFAC 74.63%,#93FFEB 101.27%);
+    background: linear-gradient(125.34deg, #CDFF7C 0%, #8CFFAC 30.63%, #93FFEB 51%, white 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 250% 100%;
+    transition: background-position 0.5s ease;
+    background-position: 0 0;
+
+    &:hover {
+        background-position: 100% 0;
+    }
+}
+
+
+
+.welcomesection__link:hover,
+.service-testimonials .servtestim__header .servtestim__header-right a:hover,
+.lateststories__header-right a:hover {
+    box-shadow: 0px 8px 20px rgb(67 253 130 / 25%), 0px 26px 50px #2f463a;
+    animation: none;
+    background: #C9FA3D;
+    transition: 0.3s;
+}
+// fff > gr
+header.header .header__language span {
+    font-weight: 400;
+    font-family: "Montserrat-Bold";
+}
+
+
+.devservivessection.devservivessection__hupd .title,
+.dropusanote .dropusanotelink a span,
+header.header .header__language span {
+    color: #fff;
+    transition: 0.3s;
+    background: linear-gradient(to right, white, white 55%, #8CFFAC 54%, #93FFEB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 220% 100%;
+    background-position: 0%;
+    -webkit-transition: background-position 0.5s ease;
+    transition: background-position 0.42s ease;
+
+    &:hover {
+        background-position: 100%;
+    }
+}
+
+
+
+.dropusanote .dropusanotelink a span {
+    padding-right: 20px;
+    display: inline-block;
+}
+
+
+
+
