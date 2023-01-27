@@ -1215,6 +1215,10 @@
     .welcomesection__bottomsect a {
         margin-bottom: 15px;
     }
+
+    .welcomesection__title.hupd {
+        font-size: 28px;
+    }
 }
 
 
@@ -2682,8 +2686,10 @@ header.header.header__white .header__language {
     }
 
     .welcomesection__title.hupd {
-        font-size: 40px;
-        line-height: 110%;
+        // font-size: 40px;
+        // line-height: 110%;
+        font-size: 32px;
+        line-height: 160%;
     }
 
     .welcomesection_hupd .welcomesection__descr p {
@@ -2880,7 +2886,11 @@ header.header.header__white .header__language {
 
 }
 
-
+@media(max-width:360.8px) {
+    .welcomesection__title.hupd {
+        font-size: 28px;
+    }
+}
 
 
 

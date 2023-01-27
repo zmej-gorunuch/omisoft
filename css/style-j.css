@@ -1,0 +1,370 @@
+/*!
+Theme Name: OmiSoft Theme
+Theme URI: http://underscores.me
+Author: Eugene Mazuryk
+Author URI: https://weblorem.com
+Description: Custom WordPress theme.
+Version: 1.4.5
+Tested up to: 7.4
+Requires PHP: 7.3
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: omisoft
+*/
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block
+}
+
+body {
+	line-height: 1
+}
+
+blockquote,
+q {
+	quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+	content: "";
+	content: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+body,
+html {
+	padding: 0;
+	margin: 0;
+	font-family: Montserrat
+}
+
+.overFlow {
+	overflow: hidden
+}
+
+a {
+	color: inherit;
+	text-decoration: none
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+:root {
+	--top-block-color-1: #114fb3;
+	--top-block-color-2: #041050;
+	--font-for-dark-bg: #f6f2f2;
+	--font-for-light-bg: #2f2f2f;
+	--text: #2f2f2f;
+	--quote: #9a9a9a;
+	--time-estimation-bg: #eaf4ff;
+	--time-estimation-bg-black: #000;
+	--highlight: #f77b62;
+	--highlight-hover: #e6644a;
+	--link-hover: #041050;
+	--modal-blur: rgba(4, 15, 80, 0.7411764705882353);
+	--delete: #ef3c3c;
+	--delete-hover: #c81c1c;
+	--edit: #f1b316;
+	--edit-hover: #d29c12;
+	--newPost: #16b053;
+	--newPost-hover: #088b3c;
+	--publish: #ab18d4;
+	--publish-hover: #8212a1;
+	--loadMore: #2f70f2;
+	--loadMore-hover: #1b4fb5;
+	--light-gray: rgba(15, 15, 16, 0.4);
+	--black: #0f0f10;
+	--lime: #c9fa3d
+}
+
+.styles_pageBody__3I2FU {
+	display: -moz-box;
+	display: flex;
+	min-height: 100vh;
+	-moz-box-orient: vertical;
+	-moz-box-direction: normal;
+	flex-direction: column
+}
+
+.styles_container__3s3tp {
+	-moz-box-flex: 1;
+	flex: 1 1;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-family: Modernist
+}
+
+.styles_main_container__1wnCE {
+	font-family: Modernist
+}
+
+/**********************************************************************************************************************/
+
+/* GDPR Cookie */
+.styles_popupContainer__3CiOT {
+	width: 365px;
+	position: fixed;
+	z-index: 9999;
+	right: 40px;
+	top: -webkit-calc(100% - 356px);
+	top: -moz-calc(100% - 356px);
+	top: calc(100% - 356px);
+	padding: 32px;
+	background: #0f0f10;
+	color: #fff
+}
+
+.styles_popupContainer__3CiOT .styles_content__25rKw {
+	display: -moz-box;
+	display: flex;
+	-moz-box-orient: vertical;
+	-moz-box-direction: normal;
+	flex-direction: column
+}
+
+.styles_popupContainer__3CiOT .styles_content__25rKw .styles_title__1QxMl {
+	width: 100%;
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 700;
+	margin-bottom: 16px;
+	text-align: left;
+	font-family: Modernist;
+}
+
+.styles_popupContainer__3CiOT .styles_content__25rKw .styles_text__2Y8xp {
+	width: 100%;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 32px;
+	font-family: Modernist;
+	text-align: left;
+}
+
+.styles_popupContainer__3CiOT .styles_content__25rKw .styles_text__2Y8xp .styles_link__1sGK_ {
+	color: #fff;
+	-webkit-text-decoration-line: underline;
+	text-decoration-line: underline;
+	cursor: pointer
+}
+
+.styles_popupContainer__3CiOT .styles_content__25rKw .styles_text__2Y8xp .styles_link__1sGK_:hover {
+	color: var(--lime)
+}
+
+.styles_popupContainer__3CiOT .styles_content__25rKw .styles_button__3NkHD {
+	width: 100%;
+	height: 52px;
+	border: none;
+	font-size: 16px;
+	line-height: 23.5px;
+	font-weight: 700;
+	background: #fff;
+	color: #0f0f10;
+	cursor: pointer
+}
+
+.styles_popupContainer__3CiOT .styles_content__25rKw .styles_button__3NkHD:hover {
+	background: var(--lime)
+}
+
+a#gdpr-cookie-accept {
+	text-align: center;
+	width: 100%;
+	height: 52px;
+	border: none;
+	font-size: 16px;
+	line-height: 2;
+	font-weight: 700;
+	background: #fff;
+	color: #0f0f10;
+	cursor: pointer;
+	display: block;
+}
+
+a#gdpr-cookie-accept:hover {
+	background-color: #C9FA3D;
+}
+
+.cli-plugin-button, .cli-plugin-button:visited {
+	display: inline-block;
+	padding: 9px 12px;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+@media screen and (max-width: 450px) {
+	.styles_popupContainer__3CiOT {
+		width: 100%;
+		top: -webkit-calc(100% - 316px);
+		top: -moz-calc(100% - 316px);
+		top: calc(100% - 316px);
+		right: 0
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.styles_popupContainer__3CiOT {
+		width: 100%;
+		height: 370px;
+		top: -webkit-calc(100% - 370px);
+		top: -moz-calc(100% - 370px);
+		top: calc(100% - 370px);
+		right: 0
+	}
+}
+/* end GDPR Cookie */
+
+
+/* Contact Form 7 */
+.wpcf7-not-valid-tip {
+	color: #c84a4a;
+}
+
+.wpcf7-response-output {
+	margin: 0 !important;
+	padding: 15px 25px !important;
+	border: none !important;
+	font-size: 14px !important;
+}
+
+.invalid .wpcf7-response-output {
+	color: #fff !important;
+	background-color: #c84a4a !important;
+}
+
+.sent .wpcf7-response-output {
+	color: #0f0f10 !important;
+	background-color: #c9fa3d !important;
+}
+/* end Contact Form 7 */
+
+/** Clutch Widget */
+.clutch-wrapper {
+	display:flex;
+	justify-content:flex-end
+}
+
+.clutch-widget {
+	width:192px
+}
+/** end Clutch Widget */
+
+/** Hide Google reCAPTCHA v3 Badge */
+.grecaptcha-badge {
+	visibility: hidden;
+}
+/** end Hide Google reCAPTCHA v3 Badge */
