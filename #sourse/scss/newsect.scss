@@ -776,3 +776,66 @@
     }
 
 }
+
+
+
+
+
+// 27,01
+.service-operate .sectdescr {
+    color: #fff;
+    line-height: 160%;
+}
+@media(max-width:575.8px) {
+    .futuredclients h2, .hupd-benefits__left h2, .service-faq h2,
+    .service-testimonials h2, .service-testimonials h3,
+    .futuredclients h2, .hupd-benefits__left h2, .service-faq h2 {
+        font-size: 28px;
+    }
+
+    .service-benefits h2, .service-faq h2, .service-operate h2, .service-ourworks h2, .service-whatwedo h2, .service-workin h2,
+    .abussectitle, .devservivessection .abussectitle, .dropusanote.newmain .dropusanotesect__content h2, .lateststories__title, .service-whatwedo.newmain h2 {
+        font-size: 28px;
+    }
+
+    .devservivessection.devservivessection__hupd .title {
+        font-size: 16px;
+    }
+
+
+    // serv
+    .service-welcomesection .ratedbox .title {
+        font-size: 13px;
+    }
+
+    .service-welcomesection .ratedbox .descr {
+        font-size: 10px;
+    }
+
+
+    .service-ourworks h2, .service-ourworks h3 {
+        margin-bottom: 80px;
+    }
+
+}
+
+@media(max-width:360.8px) {
+    .dropusanote.dropusanote__hupd .dropusanotesect {
+        padding: 30px;
+    }
+
+    .service-faq .service-faqrow .service-faqrow__header p {
+        font-size: 12px;
+    }
+
+    .devservivessection.devservivessection__hupd .title {
+        font-size: 12px;
+    }
+
+    .service-welcomesection .service-welcomesection__ratedsection {
+        padding: 25px 5px;
+    }
+
+
+
+}
