@@ -786,24 +786,29 @@
     color: #fff;
     line-height: 160%;
 }
+
 @media(max-width:575.8px) {
-    .futuredclients h2, .hupd-benefits__left h2, .service-faq h2,
-    .service-testimonials h2, .service-testimonials h3,
-    .futuredclients h2, .hupd-benefits__left h2, .service-faq h2 {
-        font-size: 28px;
+    .service-welcomesection h1 {
+        font-size: 25px;
     }
 
+    .futuredclients h2, .hupd-benefits__left h2, .service-faq h2,
+    .service-testimonials h2, .service-testimonials h3,
+    .futuredclients h2, .hupd-benefits__left h2, .service-faq h2,
     .service-benefits h2, .service-faq h2, .service-operate h2, .service-ourworks h2, .service-whatwedo h2, .service-workin h2,
-    .abussectitle, .devservivessection .abussectitle, .dropusanote.newmain .dropusanotesect__content h2, .lateststories__title, .service-whatwedo.newmain h2 {
-        font-size: 28px;
+    .abussectitle, .devservivessection .abussectitle, .dropusanote.newmain .dropusanotesect__content h2, .lateststories__title, .service-whatwedo.newmain h2,
+    .service-benefits h3, .service-faq h3, .service-operate h3, .service-ourworks h3, .service-whatwedo h3, .service-workin h3 {
+        font-size: 22px;
     }
+
+  
 
     .devservivessection.devservivessection__hupd .title {
         font-size: 16px;
     }
 
 
-    // serv
+    
     .service-welcomesection .ratedbox .title {
         font-size: 13px;
     }
@@ -820,6 +825,15 @@
 }
 
 @media(max-width:360.8px) {
+    .futuredclients h2, .hupd-benefits__left h2, .service-faq h2,
+    .service-testimonials h2, .service-testimonials h3,
+    .futuredclients h2, .hupd-benefits__left h2, .service-faq h2,
+    .service-benefits h2, .service-faq h2, .service-operate h2, .service-ourworks h2, .service-whatwedo h2, .service-workin h2,
+    .abussectitle, .devservivessection .abussectitle, .dropusanote.newmain .dropusanotesect__content h2, .lateststories__title, .service-whatwedo.newmain h2,
+    .service-benefits h3, .service-faq h3, .service-operate h3, .service-ourworks h3, .service-whatwedo h3, .service-workin h3 {
+        font-size: 19px;
+    }
+
     .dropusanote.dropusanote__hupd .dropusanotesect {
         padding: 30px;
     }
@@ -836,6 +850,9 @@
         padding: 25px 5px;
     }
 
+    .service-welcomesection h1 {
+        font-size: 26px;
+    }
 
 
 }

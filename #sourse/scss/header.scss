@@ -397,8 +397,13 @@ div {
 }
 
 
-
-
+@media(min-width:991.8px) {
+    header.header .header__nav ul.header__menu>li.sublink .submenu {
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+    }
+    
+}
 
 
 
