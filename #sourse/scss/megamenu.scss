@@ -255,6 +255,10 @@ header.header .header__nav ul.header__menu>li.sublink {
         top: 0;
     }
 
+    .megamenu.show {
+        display: block !important;
+    }
+
     .megamenu__rightside {
         display: none;
     }
@@ -300,7 +304,7 @@ header.header .header__nav ul.header__menu>li.sublink {
         display: none;
     }
 
-    .sublink:hover .megamenu.show {
+    .sublink .megamenu.show {
         display: block;
     }
 
