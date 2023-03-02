@@ -417,8 +417,8 @@
 
 
 
-}(jQuery));
 
+	
 /* <a href="contacts.html#sectab" class="extra-tab">link</a> */
 document.addEventListener("DOMContentLoaded", function () {
 	if ('#sectab' === window.location.hash) {
@@ -524,3 +524,7 @@ sublink.addEventListener('click', function() {
 	  megamenu.classList.toggle('show');
 	}
   });
+
+
+
+}(jQuery));
