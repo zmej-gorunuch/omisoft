@@ -477,15 +477,20 @@ const megamenu = document.querySelector('.megamenu');
 
 function addWhiteClass() {
 	if (window.innerWidth >= 992) {
-		header.classList.add('header__white');
+	  header.classList.add('header__white');
+	  if (header.classList.contains('header__transparent')) {
 		header.classList.remove('header__transparent');
+	  }
 	}
-}
-
-function removeWhiteClass() {
+  }
+  
+  function removeWhiteClass() {
 	header.classList.remove('header__white');
-	header.classList.add('header__transparent');
-}
+	if (!header.classList.contains('header__transparent')) {
+	  header.classList.add('header__transparent');
+	}
+  }
+  
 
 sublink.addEventListener('mouseover', addWhiteClass);
 sublink.addEventListener('mouseout', removeWhiteClass);
