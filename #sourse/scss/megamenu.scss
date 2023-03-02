@@ -102,6 +102,14 @@ header.header .header__nav ul.header__menu>li.sublink {
                 opacity: 0.7;
             }
         }
+
+        p {
+            font-family: "Montserrat",sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            opacity: 0.5;
+            cursor: no-drop;
+        }
     }
 }
 
@@ -340,6 +348,15 @@ header.header .header__nav ul.header__menu>li.sublink {
 
     .header.support .megamenu__wrapper {
         height: auto;
+    }
+
+    .megamenu__list li p {
+        font-size: 16px;
+        color: #fff;
+        opacity: 0.3;
+        font-weight: 400;
+        line-height: 110%;
+        display: inline;
     }
 }
 
