@@ -475,22 +475,40 @@ const header = document.querySelector('header');
 const sublink = document.querySelector('.sublink');
 const megamenu = document.querySelector('.megamenu');
 
-function addWhiteClass() {
-	if (window.innerWidth >= 992) {
-	  header.classList.add('header__white');
-	  if (header.classList.contains('header__transparent')) {
-		header.classList.remove('header__transparent');
-	  }
+
+if (header.classList.contains('header__transparent')) {
+	function addWhiteClass() {
+		if (window.innerWidth >= 992) {
+			header.classList.add('header__white');
+			header.classList.remove('header__transparent');
+		}
 	}
-  }
-  
-  function removeWhiteClass() {
-	header.classList.remove('header__white');
-	if (!header.classList.contains('header__transparent')) {
-	  header.classList.add('header__transparent');
+	
+	function removeWhiteClass() {
+		header.classList.remove('header__white');
+		header.classList.add('header__transparent');
 	}
-  }
-  
+}
+if (header.classList.contains('header__black')) {
+	function addWhiteClass() {
+		if (window.innerWidth >= 992) {
+			header.classList.add('header__white');
+			header.classList.remove('header__black');
+		}
+	}
+	
+	function removeWhiteClass() {
+		header.classList.remove('header__white');
+		header.classList.add('header__black');
+	}
+}
+
+
+
+
+
+
+
 
 sublink.addEventListener('mouseover', addWhiteClass);
 sublink.addEventListener('mouseout', removeWhiteClass);
