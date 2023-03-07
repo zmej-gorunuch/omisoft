@@ -1357,3 +1357,21 @@
         right: 40px;
     }
 }
+
+
+
+
+// 07.03
+@media(max-width:1700.8px) {
+    .service-whatwedo .devservices .badgelink {
+        bottom: -230px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .service-whatwedo .devservices .badgelink {
+        bottom: 0;
+        position: relative;
+        margin: 30px auto 0;
+    }
+}
