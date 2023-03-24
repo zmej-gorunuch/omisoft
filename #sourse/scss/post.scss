@@ -1342,6 +1342,54 @@
     margin-top: 35px;
 }
 
+
+// ---
+.postauthor__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .postauthor {
+        width: 100%;
+        max-width: 290px;
+        flex: 0 0 290px;
+        margin-bottom: 15px;
+    }
+}
+.contactauthor a {
+    position: relative;
+    display: inline-block;
+    background: #C9FA3D;
+    padding: 12px 21px;
+    transition: 0.3s;
+    margin-bottom: 15px;
+
+    span {
+        color: #0F0F10;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        display: inline-block;
+    }
+
+    svg {
+        vertical-align: middle;
+        margin-top: -2px;
+
+        path {
+            stroke: #212121;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0px 8px 20px rgba(67,253,130,0.25), 0px 26px 50px #2f463a;
+    }
+}
+
+
+
+
 @media(min-width:1025px) {
     .postbox-col:not(.w-100) {
         .postbox {
@@ -1435,6 +1483,10 @@
     }
 }
 
+@media(max-width:1199.8px) {
+
+}
+
 @media(max-width:991.8px) {
     .descrtext {
        display: none;
@@ -1507,5 +1559,9 @@
     .postbox-col:not(.w-100) .postbox .postbox__body,
     .postbox-col:not(.w-100) .postbox {
         height: auto;
+    }
+
+    .contactauthor {
+        margin: 0 auto;
     }
 }
