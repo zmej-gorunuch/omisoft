@@ -1565,3 +1565,19 @@
         margin: 0 auto;
     }
 }
+
+
+.postreadreview {
+    background: transparent;
+}
+.postreadreview:after {
+    background-image: url(../images/homeupdate/without-noise.svg);
+    background-repeat: repeat;
+    background-color: #0A0A0B;
+    background-size: auto;
+}
+
+
+
+
+
