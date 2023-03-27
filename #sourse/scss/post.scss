@@ -1,7 +1,7 @@
 .postwrapper {
     // padding: 96px 0 0 0;
     background: #fff;
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .postcontent {
@@ -738,7 +738,7 @@
         font-size: 32px;
     }
 
-    .postmiansectbody__post  blockquote {
+    .postmiansectbody__post blockquote {
         font-size: 32px;
     }
 
@@ -997,12 +997,13 @@
         font-size: 36px;
         line-height: 130%
     }
-    
+
     .postmiansectbody__post blockquote {
         padding-left: 28px;
         font-size: 28px;
         line-height: 130%
     }
+
     .postmiansectbody__post blockquote:after {
         left: 0;
         top: 0;
@@ -1183,7 +1184,7 @@
     margin-bottom: 20px;
 }
 
-.postmiansectbody__post> ol {
+.postmiansectbody__post>ol {
     list-style: none;
     counter-reset: my-awesome-counter;
     padding-left: 10px;
@@ -1200,7 +1201,7 @@
         // -webkit-background-clip: text;
         // -webkit-text-fill-color: transparent;
         font-weight: bold;
-      }
+    }
 }
 
 .posttablewrapper {
@@ -1210,8 +1211,10 @@
     table {
         border-spacing: 10px;
         border-collapse: separate;
-        th, td {
-            padding: 12px 17px;   
+
+        th,
+        td {
+            padding: 12px 17px;
             background: #F6F6F6;
             font-weight: 400;
             font-size: 16px;
@@ -1242,6 +1245,7 @@
     line-height: 150%;
     color: #000000;
 }
+
 .progress-container {
     transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -1249,6 +1253,7 @@
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 }
+
 .progress-container.support {
     top: 136px;
 }
@@ -1263,6 +1268,7 @@
     .postmiansectbody__post h1 {
         font-size: 42px;
     }
+
     .postmiansectbody__post h2 {
         font-size: 32px;
     }
@@ -1274,6 +1280,7 @@
     .postmiansectbody__post h4 {
         font-size: 24px;
     }
+
     // .progress-container.support {
     //     top: 176px;
     // }
@@ -1287,7 +1294,7 @@
             width: 800px;
         }
     }
-   
+
     .codeexample {
         display: block;
         overflow: auto;
@@ -1302,15 +1309,19 @@
     .postmiansectbody__post h1 {
         font-size: 38px;
     }
+
     .postmiansectbody__post h2 {
         font-size: 36px;
     }
+
     .postmiansectbody__post h3 {
         font-size: 32px;
     }
+
     .postmiansectbody__post h4 {
         font-size: 21px;
     }
+
     .postmiansectbody__post h5,
     .postmiansectbody__post h6 {
         font-size: 16px;
@@ -1328,7 +1339,9 @@
 
 // 01.08
 .posttablewrapper table td {
-    ul, ol {
+
+    ul,
+    ol {
         padding-left: 18px;
     }
 }
@@ -1356,6 +1369,7 @@
         margin-bottom: 15px;
     }
 }
+
 .contactauthor a {
     position: relative;
     display: inline-block;
@@ -1383,11 +1397,15 @@
     }
 
     &:hover {
-        box-shadow: 0px 8px 20px rgba(67,253,130,0.25), 0px 26px 50px #2f463a;
+        box-shadow: 0px 8px 20px rgba(67, 253, 130, 0.25), 0px 26px 50px #2f463a;
     }
 }
 
-
+.service-faq.service-faq__hupd.faq_space,
+.service-faq.faq_space {
+    margin-top: 200px;
+    box-shadow: none;
+}
 
 
 @media(min-width:1025px) {
@@ -1396,27 +1414,27 @@
             position: relative;
             height: 437px;
             overflow: hidden;
-            
-    
+
+
             .postbox__body-top {
                 padding: 16px 40px 0 40px;
             }
-    
+
             .postbox__bottsect {
                 padding: 0 40px 30px 40px;
             }
-    
+
             &:hover {
                 .postbox__body {
                     height: 100%;
                 }
-    
+
                 .descrtext {
                     opacity: 1;
                 }
             }
         }
-    
+
         .postbox .postbox__body {
             bottom: 0;
             width: 100%;
@@ -1427,17 +1445,17 @@
             transition: 0.5s;
             position: absolute;
         }
-    
+
         .postbox .descrtext {
             font-size: 16px;
             line-height: 140%;
         }
-    
+
         .postbox .title {
             margin-bottom: 0;
             height: auto;
         }
-    
+
         .postbox .descrtext {
             opacity: 0;
             transition: 0.5s;
@@ -1447,11 +1465,11 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
-    
+
         .postbox__body-top {
             height: calc(100% - 60px);
         }
-    
+
         .postbox .postbox__bottsect {
             background: #fff;
             position: relative;
@@ -1467,7 +1485,13 @@
 }
 
 
+@media(max-width:1600.8px) {
 
+    .service-faq.service-faq__hupd.faq_space,
+    .service-faq.faq_space {
+        margin-top: 160px;
+    }
+}
 
 @media(max-width:1400.8px) {
     .postbox-col:not(.w-100) .postbox .postbox__body-top {
@@ -1483,13 +1507,14 @@
     }
 }
 
-@media(max-width:1199.8px) {
-
-}
-
 @media(max-width:991.8px) {
     .descrtext {
-       display: none;
+        display: none;
+    }
+
+    .service-faq.service-faq__hupd.faq_space,
+    .service-faq.faq_space {
+        margin-top: 100px;
     }
 }
 
@@ -1505,7 +1530,7 @@
     .postbox-col:not(.w-100) .postbox__body-top {
         height: calc(100% - 50px);
     }
-    
+
     .postbox-col:not(.w-100) .postbox .postbox__body {
         height: calc(100% - 120px);
     }
@@ -1522,13 +1547,13 @@
         -webkit-line-clamp: 4;
     }
 
-    .postreadreview .postreadreview__link{
+    .postreadreview .postreadreview__link {
         width: 100%;
         max-width: 100%;
     }
 
     .postreadreview:before {
-       display: none;
+        display: none;
     }
 
     .postreadreview h2 {
@@ -1556,6 +1581,7 @@
     .postbox-col:not(.w-100) .postbox__body-top {
         height: auto;
     }
+
     .postbox-col:not(.w-100) .postbox .postbox__body,
     .postbox-col:not(.w-100) .postbox {
         height: auto;
@@ -1564,20 +1590,26 @@
     .contactauthor {
         margin: 0 auto;
     }
+
+    .service-faq.service-faq__hupd.faq_space,
+    .service-faq.faq_space {
+        margin-top: 30px;
+    }
+
+
+
+
+
 }
 
 
-.postreadreview {
+.postreadreview:not(.blackmob) {
     background: transparent;
 }
-.postreadreview:after {
+
+.postreadreview:not(.blackmob):after {
     background-image: url(../images/homeupdate/without-noise.svg);
     background-repeat: repeat;
     background-color: #0A0A0B;
     background-size: auto;
 }
-
-
-
-
-
