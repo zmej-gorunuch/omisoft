@@ -57,7 +57,7 @@
 			}
 
 			$('.servoperateslider').slick({
-				slidesToShow: 6,
+				slidesToShow: stages_count,
 				slidesToScroll: 1,
 				arrows: false,
 				infinite: false,
