@@ -1415,7 +1415,15 @@
 .postnav {
     width: 217px;
     display: inline-block;
-
+    p {
+        margin-bottom: 15px;
+        color: #0F0F10;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 150%;
+        margin-bottom: 15px;
+        text-align: left;
+    }
     ul {
         list-style-type: none;
         padding: 0;
@@ -1437,10 +1445,6 @@
 
         li {
             margin-bottom: 15px;
-            color: #0F0F10;
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 150%;
 
             &:last-child {
                 margin-bottom: 0;
