@@ -1000,11 +1000,14 @@
 
 
 
+
+
+
 // 19.04
 .servoperatesl-wrapper {
     .linepoints[data-point='5'] {
         span {
-            &:nth-child(6) {
+            &:nth-child(6), &:nth-child(7) {
                 display: none;
             }
         }
@@ -1012,7 +1015,7 @@
 
     .linepoints[data-point='4'] {
         span {
-
+            &:nth-child(7),
             &:nth-child(6),
             &:nth-child(5) {
                 display: none;
@@ -1023,7 +1026,7 @@
     .linepoints[data-point='3'] {
 
         span {
-
+            &:nth-child(7),
             &:nth-child(6),
             &:nth-child(5),
             &:nth-child(4) {
@@ -1034,7 +1037,7 @@
     .linepoints[data-point='2'] {
 
         span {
-
+            &:nth-child(7),
             &:nth-child(6),
             &:nth-child(5),
             &:nth-child(4),

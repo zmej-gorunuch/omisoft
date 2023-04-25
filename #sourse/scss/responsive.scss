@@ -115,9 +115,12 @@
         padding: 0 5px;
     }
 
-    .servoperatesl-wrapper .linepoints span:nth-child(6) {
+    .servoperatesl-wrapper .linepoints span:nth-child(6)
+    {
         display: none;
     }
+
+    
 
     .servoperatesl-wrapper .linepoints {
         width: calc(100% - 240px);
@@ -380,7 +383,10 @@
         font-size: 42px;
     }
 
-
+    .servoperatesl-wrapper .linepoints span:nth-child(7)
+    {
+        display: none;
+    }
 
 
 
@@ -692,7 +698,11 @@
     }
 
 }
-
+@media(max-width:768.8px) {
+    .servoperatesl-wrapper .linepoints span:nth-child(3) {
+        display: none;
+    }
+}
 @media(max-width:767.8px) {
 
     .service-welcomesection .service-welcomesection__ratedsection {
