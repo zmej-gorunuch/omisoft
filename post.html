@@ -1088,7 +1088,7 @@ function test(){
             event.preventDefault();
             var id = $(this).attr('href'),
                 top = $(id).offset().top;
-            $('body,html').animate({ scrollTop: top }, 1500);
+            $('body,html').animate({ scrollTop: top - 105 }, 1500);
         });
 
 
@@ -1098,7 +1098,7 @@ function test(){
             anchors.forEach(anchor => {
                 if (anchor.closest('.postmiansectbody__post')) {
                     const anchorTop = anchor.getBoundingClientRect().top + window.pageYOffset;
-                    if (window.pageYOffset >= anchorTop - 5) { 
+                    if (window.pageYOffset >= anchorTop - 110) { 
                         links.forEach(link => {
                             const correspondingLink = document.querySelector(`.postnav li a[href="#${anchor.id}"]`);
                             if (correspondingLink) {
